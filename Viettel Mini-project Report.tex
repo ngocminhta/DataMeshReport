@@ -1,0 +1,203 @@
+% !TeX spellcheck = en_US
+\documentclass[12pt, a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[english,vietnamese]{babel}
+
+\setlength{\parskip}{0.5\baselineskip}%
+\setlength{\parindent}{0pt}%
+% Set the title of the current document to be produced.
+\newcommand{\doctitle}{{{\Huge \textbf{Data Mesh Architecture}}}}
+% Command for the due date of the homework.
+%\newcommand{\duedate}{\color{rltred}{\faCalendarCheckO { }Due date: May 1st, before midnight \faCalendarCheckO	}}
+
+%------------------------------------------------------------
+% Import commands for both teacher and course information.  | 
+% NOTE: Change your teacher and course info in these files. |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/teacher-info}                              %|
+\input{includes/course-info}                               %|   
+%
+%------------------------------------------------------------
+%-- Import packages and custom command definitons.          |
+%------>------>------>------>------>------>------>------>-->|
+\input{includes/packages}                                  %|  
+\input{includes/custom-commands}   
+%
+%---> Genereate & inject metadata describing                |
+%     the produced document                                 |
+\input{includes/metadata}                                  %|
+%------------------------------------------------------------
+
+
+%-----------------------------------------------------------
+% Uncomment the following if you want to insert a watermark! 
+%
+%--> Watermark package settings: 
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{0.5}
+%\SetWatermarkColor[gray]{0.8}
+%-------------------------------------------------
+\hypersetup{hidelinks}
+\begin{document} 
+	
+    \raggedbottom
+    \clearpage
+    \pagenumbering{roman}
+    \thispagestyle{empty}
+    %-------------------------------------------------------------
+    %-- Make the header of the document                          |
+    %------>------>------>------>------>------>------>------>--> |
+    \input{includes/document-header}
+    \selectlanguage{english}
+    %\hrule width0.3\textwidth
+    \begingroup
+    \normalsize
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\justifying
+\selectlanguage{vietnamese}
+Dear the board of directors of Viettel Group, the mentors, and all of my friends,
+
+This document is a part of my research mini-project as a data engineer intern for the first period of Viettel Digital Talent 2023 Program. The completion of this research report does not mean the end of my duties as learners. In fact, this report is a first step towards consistently studying what I have reviewed and written here.
+
+Data has grown up so quickly recently. The term 'big data' has become familiar with every tech-lovers is the clearest evidence of the explosion of data. This leads to many requirements of upgrading the current system and management, along with finding new architecture to store, process and analyze data. Once the central data lake has been overloaded, we need to design a decentralized architecture. This report is written under the research about the Data Mesh architecture, a new design that was first defined by Zhamak Dehghani in 2019.
+
+To write this document, I would like to give many thanks to Viettel Group, and Viettel Digital Talent program for giving me chance to do my research. I want to send a big thanks to Mr. Nguyễn Chí Thanh, and all the mentors of the first period of the program, who gave me many useful lectures and guidance. Also, I want to say thanks to professor Huỳnh Thị Thanh Bình, professor Đỗ Tuấn Anh for their initial supports, and many other professors at the School of Information and Communication Technology, Hanoi University of Science and Technology about their public documents about data engineering. Last, I would like to say thanks to all of my friends, who always read my documents, comment about them and support me whenever I need.
+
+Because this document is written in such a short time and some of the concepts are so new and hard to understand for a fresher like me, it is so hard to make sure it is completely correct, including the grammar errors and formatting errors in \LaTeX. I would love to receive your contributions via \underline{\textbf{\href{mailto:ngocminhta.nmt@gmail.com}{ngocminhta.nmt@gmail.com}}}.
+
+Thank you for reading this report and looking forward to getting many comments from you.\\
+\vspace{0.5cm}
+
+\raggedleft
+\textbf{Ngoc-Minh Ta}
+
+\justifying
+\selectlanguage{english}
+
+        \tableofcontents
+        \listoffigures
+        \addcontentsline{toc}{chapter}{List of Figures}
+        \listoftables
+        \addcontentsline{toc}{chapter}{List of Tables}
+    \endgroup
+    
+    \begingroup
+        \frontmatter
+        \justifying
+        \let\cleardoublepage\clearpage
+    \endgroup
+    
+    \mainmatter
+    \justifying
+    \normalsize
+%--------------------
+\chapter{Problems and Initial Approach}
+
+\section{Real-life Problem}
+\subsection{A problem from history}
+Many organizations have invested in building a central data lake. To make data-driven business, there is a central data administration team take the responsibility for this.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=14cm]{CentralDataTeam.png}
+	\caption{Central data team in a data-driven business}
+	\label{centraldata}
+\end{figure}
+
+This model works quite well at the first time, however, after a while, they noticed that \textbf{the team often became bottleneck}. The team were overloaded with thousands of tasks and questions from multiple teams, along with the requests of time and accuracy. This lead to a massive problem since the competitiveness of business depends much on the speed of analysis. For example, when we create a landing page for a new product, how does this change the influence clicking and buying rate?
+
+But, why the response of the central data team is so slow and struggle? Actually, once the operational database changes, the team has to spend much of their time fixing the broken data pipelines. The little remaining time is insufficient for them to discover and understanding all the necessary domain data \textbf{for each question}. Getting the required domain expertise is a daunting task. \cite{datamesh2022prologue,datameshweb}
+
+In contrast, some firms employ domain-driven design strategies that include independent domain teams and a decentralized micro-service architecture to relieve burden on the central data team. These teams exclusively control and understand their domain, including the company's information demands. The issue hasn't entirely been resolved, though. The domain teams must contact the overloaded central data team despite being aware of the key information needs and the domain, in order to obtain the essential data-driven insights. \cite{datamesh2022prologue}
+
+\subsection{Demands from recent developments}
+Let's consider the scale-up of the software development over time. When one task grow bigger and bigger, we have to decentralize it into many smaller tasks, otherwise, all the organization will overload and lost of control. Take into consideration what we have done for the scale-up of software development:
+	\begin{itemize}
+		\item Decentralize business into domains;
+		\item Decentralize engineering into autonomous teams;
+		\item Decentralize monolith into micro-services;
+		\item Decentralize operations into DevOps teams.
+	\end{itemize}
+
+Hence, the next thing we need to do is scaling up data analytics by decentralizing data lake into data mesh.\cite{datameshweb}
+
+The position between domain teams and the central data team gets worse as the organization eventually grows. Transferring data management responsibilities from the central data team to the domain teams can help. Domain-oriented decentralization for analytical data is the central notion of the data mesh concept. Similar to APIs in a micro-service design, a data mesh architecture allows domain teams to conduct cross-domain data analysis on their own and connects data.
+
+\section{Initial approach}
+\subsection{What is Data Mesh?}
+The term data mesh was first stated by Zhamak Dehghani in 2019 and is based on four fundamental principles, which will be discussed in depth later:
+	\begin{itemize}
+		\item Principle of Domain Ownership;
+		\item Principle of Data as a Product;
+		\item Principle of the Self-Serve Data Platform;
+		\item Principle of Federated Computational Governance.
+	\end{itemize}
+
+
+\subsection{What will changes after data mesh?}
+Data mesh is a fresh method for business intelligence, data analysis and management that is based on an innovative distributed architecture. Along with that, data lake and data warehouse do not disappear they just become nodes in the mesh. \cite{machado2022data,shiftkpmg}
+
+Data mesh ensures organizations to continue to apply some data lake principles, such as making immutable data available for exploration or analytical use, and data lake tooling for internal implementation of data products or as part of the shared data infrastructure. Data lake would not be the centerpiece anymore.
+
+It is an implementation detail sub-serving the idea of domain data product as the first-class concern. The same applies to data warehouse in terms of business reporting and visualization. \cite{shiftkpmg}
+
+Implementing a data mesh is not a purely technical project that we can implement in isolation from the rest of the business. It's not some thing that we can just start with, and then it works from the first try, but we have to grow and develop with it. It also cause a cultural shift in the organization.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=17.5cm]{CulturalShift.png}
+	\caption{Cultural shift after implementing data mesh}
+	\label{culturalshift}
+\end{figure}
+
+Also, data mesh calls for a fundamental shift in the assumptions, architecture, technical solutions, and social structure of our organizations, that means, how we manage, use and own analytical data. \cite{datamesh2022ch1}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=14cm]{OrgChanges.png}
+	\caption{Data mesh dimensions of organizational changes}
+	\label{orgchange}
+\end{figure}
+
+Data mesh can be used as part of an enterprise data strategy, articulating the target state of the enterprise architecture as well as an organizational operating model with an iterative execution plan.
+
+In its most basic form, it can be characterized by four interacting principles, which will be discussed in depth in section \ref{4principles}.
+
+\chapter{Data Mesh Architecture Design}
+\section{Four Fundamental Principles of Data Mesh}\label{4principles}
+Four simple principles can represent the logical architecture and operating model of data mesh. They are intended to move us closer to the goals of data mesh: increasing the value of data at scale, maintaining agility as an organization grows, and embracing change in a complex and turbulent business context.
+
+\subsection{Principle of Domain Ownership}
+Data mesh, at its core, is founded in decentralization and distribution of data responsibility to people who are closest to the data. This is to support a scale-out structure and continuous and rapid change cycles.
+
+However, in contrast to traditional data structures with technological partition (e.g. data warehouse, data lake), data mesh follows \textit{the seams of organizational units}. It follows the lines of division of responsibility aligned with the business using \textit{domain-driven design (DDD) strategies}. Data mesh also gives the data sharing responsibility yo each of the business domains, each domain is responsible for the data it is most familiar with.
+
+\subsubsection*{Domain-Driven Design Strategies to Data}
+DDD is an approach to decomposition of software design and team allocation, based on the seams of a business. It defines a \textit{domain} as "a sphere of knowledge, influence or activity."
+
+
+
+%------ NOT STARTED-----------
+\chapter{Data Product Design \& Implementation}
+
+\chapter{Data Mesh in use}
+\section{Data Mesh with Data Lakehouse}
+
+\section{Frameworks and technologies for Data Mesh}
+
+\section{Case study or Demo}
+
+
+\begingroup
+\backmatter
+\pagenumbering{alph}
+\renewcommand\bibname{References}
+
+\bibliographystyle{IEEEtran} % We choose the "plain" reference style
+\bibliography{includes/refs} % Entries are in the refs.bib file
+\endgroup
+
+\clearpage
+\end{document}
