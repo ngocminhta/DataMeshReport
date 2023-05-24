@@ -34,7 +34,7 @@ C.~Jochen, V.~Larysa, and S.~Harrer. (2023) Data mesh from an engineering
 \BIBentrySTDinterwordspacing
 
 \bibitem{machado2022data}
-I.~A. Machado, C.~Costa, and M.~Y. Santos, ``Data mesh: concepts and principles
+I.~A. Machado, C.~Costa, and M.~Y. Santos, ``Data mesh: Concepts and principles
   of a paradigm shift in data architectures,'' \emph{Procedia Computer
   Science}, vol. 196, pp. 263--271, 2022.
 
@@ -49,5 +49,10 @@ D.~Nicolas. (2023) Will the buzz around data mesh really help solve my data
 Z.~Dehghani, ``Data mesh in a nutshell,'' in \emph{Data Mesh: Delivering
   Data-Driven Value at Scale}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly
   Media, 2022, pp. 3--14.
+
+\bibitem{dddevan}
+E.~Evans, \emph{Domain-Driven Design: Tackling Complexity in the Heart of
+  Software}.\hskip 1em plus 0.5em minus 0.4em\relax Addison-Wesley
+  Professional, 2003.
 
 \end{thebibliography}

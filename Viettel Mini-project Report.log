@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.2)  23 MAY 2023 16:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.2)  24 MAY 2023 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1832,7 +1832,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 1.
-<CentralDataTeam.png, id=120, 989.6975pt x 754.82pt>
+<CentralDataTeam.png, id=123, 989.6975pt x 754.82pt>
 File: CentralDataTeam.png Graphic file (type png)
 <use CentralDataTeam.png>
 Package pdftex.def Info: CentralDataTeam.png  used on input line 104.
@@ -1864,7 +1864,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-<CulturalShift.png, id=139, 2007.5pt x 1003.75pt>
+<CulturalShift.png, id=142, 2007.5pt x 1003.75pt>
 File: CulturalShift.png Graphic file (type png)
 <use CulturalShift.png>
 Package pdftex.def Info: CulturalShift.png  used on input line 150.
@@ -1874,7 +1874,7 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 150--151
  [][] 
  []
 
-<OrgChanges.png, id=141, 126.2316pt x 192.72pt>
+<OrgChanges.png, id=144, 126.2316pt x 192.72pt>
 File: OrgChanges.png Graphic file (type png)
 <use OrgChanges.png>
 Package pdftex.def Info: OrgChanges.png  used on input line 159.
@@ -1901,6 +1901,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4 <./OrgChanges.png (PNG copy)>]
 Chapter 2.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 180.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 180.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 180.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 180.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 180.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 180.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1912,6 +1924,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5
 
 ]
+<DecomposeData.png, id=169, 754.82pt x 579.16376pt>
+File: DecomposeData.png Graphic file (type png)
+<use DecomposeData.png>
+Package pdftex.def Info: DecomposeData.png  used on input line 191.
+(pdftex.def)             Requested size: 398.33858pt x 305.63857pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1920,9 +1938,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6
-
-]
+[6 <./DecomposeData.png>]
 Chapter 3.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1932,7 +1948,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7]
+[7
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1984,13 +2002,13 @@ AED: lastpage setting LastPage
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35693 strings out of 478268
- 662980 string characters out of 5846348
- 1039185 words of memory out of 5000000
- 53183 multiletter control sequences out of 15000+600000
- 553298 words of font info for 100 fonts, out of 8000000 for 9000
+ 35732 strings out of 478268
+ 663547 string characters out of 5846348
+ 1039371 words of memory out of 5000000
+ 53215 multiletter control sequences out of 15000+600000
+ 565010 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,108p,802b,986s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,11n,108p,913b,986s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 }{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/vntex/t5.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
@@ -1998,10 +2016,10 @@ exlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/vntex/urwvn/uplr8v.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on "Viettel Mini-project Report.pdf" (21 pages, 1857153 bytes).
+Output written on "Viettel Mini-project Report.pdf" (21 pages, 3165390 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
