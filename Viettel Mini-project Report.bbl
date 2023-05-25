@@ -55,4 +55,19 @@ E.~Evans, \emph{Domain-Driven Design: Tackling Complexity in the Heart of
   Software}.\hskip 1em plus 0.5em minus 0.4em\relax Addison-Wesley
   Professional, 2003.
 
+\bibitem{datamesh2022ch2}
+Z.~Dehghani, ``Principle of domain ownership,'' in \emph{Data Mesh: Delivering
+  Data-Driven Value at Scale}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly
+  Media, 2022, pp. 15--28.
+
+\bibitem{fair}
+M.~D. Wilkinson \emph{et~al.}, ``The fair guiding principles for scientific
+  data management and stewardship,'' \emph{Scientific data}, vol.~3, no.~1, pp.
+  1--9, 2016.
+
+\bibitem{datamesh2022ch3}
+Z.~Dehghani, ``Principle of data as a product,'' in \emph{Data Mesh: Delivering
+  Data-Driven Value at Scale}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly
+  Media, 2022, pp. 29--46.
+
 \end{thebibliography}

@@ -78,9 +78,12 @@ Thank you for reading this report and looking forward to getting many comments f
 
         \tableofcontents
         \listoffigures
-        \addcontentsline{toc}{chapter}{List of Figures}
+        \begingroup
+        \let\clearpage\relax
         \listoftables
         \addcontentsline{toc}{chapter}{List of Tables}
+        \endgroup
+        
     \endgroup
     
     \begingroup
@@ -177,7 +180,7 @@ However, in contrast to traditional data structures with technological partition
 \subsubsection*{Domain-Driven Design (DDD) Strategies to Data}
 DDD is an approach to decomposition of software design and team allocation, based on the seams of a business. It defines a \textit{domain} as "a sphere of knowledge, influence or activity."
 
-In data platform architecture, the closest use of DDD is for source operational systems to emit their business domain events and the monolithic data platform to consume them. DDD’s Strategic Design embraces modeling based on multiple models each contextualized to a particular domain, called a bounded context\footnote{A bounded context is the delimited applicability of a particular model that gives team members a clear and shared understanding of what has to be consistent and what can develop independently. \cite{dddevan}}. As Z. Dehghani's recommendation, data mesh adopts the boundary of bounded contexts to individual data products - data, its models, and its ownership. For some organizations have built services based on the domain bounded contexts, now, they apply the same decomposition and modeling to their analytical data in each domain.
+DDD’s Strategic Design embraces modeling based on multiple models each contextualized to a particular domain, called a bounded context\footnote{A bounded context is the delimited applicability of a particular model that gives team members a clear and shared understanding of what has to be consistent and what can develop independently. \cite{dddevan}}. As Z. Dehghani's recommendation, data mesh adopts the boundary of bounded contexts to individual data products - data, its models, and its ownership. For some organizations have built services based on the domain bounded contexts, now, they apply the same decomposition and modeling to their analytical data in each domain.
 
 Domain data ownership is the foundation of scale in a complex system like enterprises today. When we map the data mesh to an organization and its domains, we discover a few different archetypes of domain-oriented analytical data, then we defined them as:
 	\begin{itemize}
@@ -188,20 +191,99 @@ Domain data ownership is the foundation of scale in a complex system like enterp
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=14cm]{DecomposeData.png}
+	\includegraphics[width=12cm]{DecomposeData.png}
 	\caption{Decomposing the analytical data ownership and architecture, aligned with business domains, along with their data archetypes.}
 	\label{DecomposeData}
 \end{figure}
 
-%------ NOT STARTED-----------
+\subsubsection*{Transition to Domain Ownership}
+The shift toward domain-oriented data ownership leads to accepting and working with real-world messiness of data, particularly in high-speed and scaled environments:
+	\begin{itemize}
+		\item \textbf{Push Data Ownership Upstream:} Data can be consumable and useful right at the source analytical domain (source-aligned domain data). At a later point downstream, source-aligned domain data can be aggregated and transformed to create a new higher order insight (aggregate domain data or fit-for-purpose analytical data).
+		\item \textbf{Define Multiple Connected Models:} We implement multiple models of polysemes\footnote{Polysemes are shared concepts across different domains. They point to the same entity, with domain-specific attributes. \cite{datamesh2022ch2}}. In data mesh, each domain can model its data according to its context, share this data and its models with others, and identify how one model can relate and map to others.
+		\item Data mesh does not enforce the idea of searching for the single source of truth for each shared business concept. However, it places multiple practices in place that reduces the likelihood of multiple copies of out-of-date data. Long-term domain-oriented ownership with accountability to share discoverable, high-quality, and usable data in multiple modes for analysts and scientists.
+		\item \textbf{Hide the Data Pipelines:} Data pipelines are first-class architectural concerns in traditional data architectures, composing more complicated data processing and transportation. A data pipeline in data mesh is just an internal implementation of the data domain that is handled within the domain.
+	\end{itemize}
+
+Domains are taking up extra data responsibilities with data mesh. To acquire agility and authenticity, responsibilities and efforts transfer from a centralized data team to domains. Don't try to design a business's domains ahead of time and then assign and model analytical data based on that. Instead, begin by working with your company's seams as they are. We should allow data evolution to shape the shape of the organization, and vice versa. \cite{datamesh2022ch2}
+
+\subsection{Principle of Data as a Product}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=11cm]{dautnivs.png}
+	\caption{The baseline usability attributes of data products (DAUTNIVS)}
+	\label{dautnivs}
+\end{figure}
+
+The principle of data as a product is a response to the data siloing challenge that may arise from the distribution of data ownership to domains. It is also a shift in the data culture toward data accountability and data trust at the point of origin. The ultimate goal is to make data simply usable.
+
+In approach to data product, there is a set of non-negotiable baseline characteristics in figure \ref{dautnivs} that a data product incorporates to be considered useful. These characteristics apply to all data products, regardless of their domain or archetype. We call these baseline data product usability attributes. Every data product incorporates these characteristics to be part of the mesh. These are an addition to what has been known as \textbf{FAIR} data in the past—data that meets the principles of \textbf{D}indability, \textbf{A}ccessibility,  \textbf{I}nteroperability, and \textbf{R}eusability. \cite{fair}
+
+The introduction of analytical data as a product adds to the list of existing responsibilities
+of cross-functional domain teams \cite{datamesh2022ch3} and expands their roles to:
+	\begin{itemize}
+		\item Data product developer: The role responsible for developing, serving, and maintaining the domain’s data products as long as the data products live and are being used. They will be working alongside their fellow application developers in the domain.
+		\item Data product owner: The role accountable for the success of a domain’s data products in delivering value, satisfying and growing the data users, and maintaining the life cycle of the data products. He assure continuity of ownership of data and accountability of success metrics such as data quality, decreased lead time of data consumption, and in general data user satisfaction through net promoter score.
+	\end{itemize}
+
+Define these roles for each domain and allocate one or multiple people to the roles depending on the complexity of the domain and the number of its data products. Moreover, to make a data as a product, we need to satisfy these conditions:
+	\begin{itemize}
+		\item Reframe the Nomenclature: Data mesh suggests reframing receiving upstream data from ingestion to consumption. The minor distinction is that the upstream data has already been cleansed, processed, and is ready for consumption.
+		\item Think of Data as a Product, not a mere asset.
+		\item Establish a Trust-But-Verify Data Culture: The data as a product principle entails a variety of actions that contribute to a culture in which data users can trust the veracity of the data and focus on proving its suitability for their use cases. Data-as-a-product practices strive to create a new culture, moving away from presumption of guilt.
+		\item Join Data and Compute as One Logical Unit: Coexistence of data and code is not a novel concept. The expansion of operational systems has resulted in a model in which each service handles its own code and data, as well as schema definition and upgrades. The link between the code and its data distinguishes an operational system.
+	\end{itemize}
+
+\subsection{Principle of the Self-Serve Data Platform}
+Data mesh’s principle of a self-serve platform comes to the rescue to lower the cognitive load that the other two principles impose on the existing domain engineering teams: own your analytical data and share it as a product.
+
+It shares common capabilities with the existing data platforms: providing access to polyglot storage, data processing engines, query engines, streaming, etc. However, it differentiates from the existing platforms in its users: autonomous domain teams made up primarily of generalist technologists. It manages a higher-level construct of a data product encapsulating data, metadata, code, and policy as one unit.
+
+Its purpose is to give domain teams superpowers, by hiding low-level complexity behind simpler abstractions and removing friction from their journeys in achieving their outcome of exchanging data products as a unit of value. And ultimately it frees up the teams to innovate with data. To scale out data sharing, beyond a single deployment environment or organizational unit or company, it favors decentralized solutions that are interoperable.
+
+\subsection{Principle of Federated Computational Governance}
+Some of the common questions about the feasibility of data mesh revolve around governance concerns, now in a decentralized manner. How can we make sure individual data products comply with a set of common policies that make them secure, compliant, interoperable, and trustworthy? Particularly, how can we have any guarantees when each domain owns and controls its own data products and there is no longer a central team getting its arms around the data? What happens to the centralized governance team?
+
+The answer to these questions lies within the data mesh governance model, called federated computational governance. Data mesh, like its predecessors the lake and warehouse, meets a similar set of governance objectives. But it differs in its operating model and how these objectives are met.
+
+The data mesh governance model consists of three complementary pillars. First and foremost, it requires systems thinking, looking at the mesh as an ecosystem of interconnected data product and platform systems, and their independent and yet connected teams. Then try to find the leverage points and feedback loops to control the behavior of the mesh as a whole toward its objective, creating value through sharing data products at scale.
+
+Second, apply a federated operating model. From the social and organizational per‐spective, create a federated team of individual domains and platform representatives. Create incentives that are aligned with both domains’ data product success as well as the success of the wider ecosystem. Let domains have autonomy and responsibility for the majority of policies that are in the sphere of their influence and control, while leaving cross-functional and a small set of policies to be defined globally.
+
+Finally, from a practical and implementation perspective, data mesh governance heavily relies on embedding the governance policies into each data product in an automated and computational fashion. This of course heavily relies on the elements of the underlying data platform, to make it really easy to do the right thing. To bring these three pillars together, Figure \ref{DataGov} shows an example of this model.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=12cm]{DataGov.png}
+	\caption{Example of data mesh governance operating model}
+	\label{DataGov}
+\end{figure}
+
+Data mesh governance seeks to improve the existing approach to data governance at the intersection of a decentralized value system meeting automation and computation.
+
+Data mesh governance is the method by which we define and apply what is right and how to do the right thing in an ecosystem of data product teams. The definition of what is right and how to do the right thing has occupied the great minds for centuries, from Aristotle in Ancient Greece to the German Idealism era to modern political systems. As human beings we have wrestled with the definition and regulation of what is right somewhere in between common good and utilitarianism—approaches that achieve maximum benefit and happiness of the community—and individualism, which is prioritizing an individual’s happiness and liberty and doing what is right for them.
+
+While data mesh is not a field of philosophy, it wrestles with a similar dilemma: how to do the right thing while maintaining the autonomy, freedom, and individualism of different domains and also achieving the greater good through consistency and standardization across all data products. It defines an approach to data governance that attempts to continuously find the dynamic equilibrium between localization of decisions so that the domains can go fast versus globalization and centralization of decisions for everyone to go far.
+
+I do think catalysts such as computational governance and dual-system incentive structures can lead to domain behaviors that ultimately result in the greater good of the mesh ecosystem. However, the mesh will not reach an optimal state unless the majority of domains become intelligently augmented—with embedded ML-based systems in each of their products and systems. The continuous need for trustworthy and useful data across multiple domains to train ML-based solutions will be the ultimate motivator for the adoption of data mesh governance and doing the right thing.
+
+\section{Why we need Data Mesh?}
+Summarize recap of chap 678
+
+\section{Data Mesh Architecture Design}
+\subsection{The Logical Architecture}
+
+\subsection{The Multiplane Data Platform Architecture}
+%------ NOT STARTED ------
 \chapter{Data Product Design \& Implementation}
 
+%------ NOT IN THE BOOK ------
 \chapter{Data Mesh in use}
-\section{Data Mesh with Data Lakehouse}
+\section{Data Mesh in combination with Data Lakehouse}
 
 \section{Frameworks and technologies for Data Mesh}
 
-\section{Case study or Demo}
+\section{Case study and Demo}
 
 
 \begingroup
