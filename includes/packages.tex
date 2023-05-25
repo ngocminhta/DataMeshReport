@@ -33,8 +33,18 @@
 \usepackage{bigints}
 \usepackage{enumitem}
 \usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{hyphenat}
+\newcommand{\HY}{\hyphenpenalty=10000\exhyphenpenalty=10000}
+\newcolumntype{b}{X}
+\newcolumntype{m}{>{\HY\hsize=.3\hsize}X}
+\newcolumntype{s}{>{\HY\hsize=.3\hsize}X}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{makecell}
 \usepackage{sectsty}
 \usepackage{ragged2e}
+\usepackage{framed}
 %\usepackage{cite}
 \sectionfont{\raggedright}
 \subsectionfont{\raggedright}
@@ -71,7 +81,6 @@
 
 \pagestyle{empty}
 \usepackage{graphicx}
-\usepackage{multicol}
 \usepackage{blindtext}  
 \usepackage{vhistory} % for making a table for the revision history.
 
@@ -105,7 +114,7 @@
 %\titleformat{\part}
 %[display]
 %{\centering\normalfont\Large}
-%{\titlerule[3pt]\vspace{3pt}\titlerule[1pt]\vspace{3pt}\MakeUppercase{\partname} \thepart}
+%{\titlerule[3pt]\vspace{3pt}\titlerule[1pt]\vspace{3pt}\Uppercase{\partname} \thepart}
 %{0pt}
 %{\titlerule[1pt]\vspace{3pt}\titlerule[3pt]\vspace{4pc}\bfseries\huge\scshape}
 
