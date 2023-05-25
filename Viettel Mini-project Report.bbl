@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{machado2022data}
+I.~A. Machado, C.~Costa, and M.~Y. Santos, ``Data mesh: Concepts and principles
+  of a paradigm shift in data architectures,'' \emph{Procedia Computer
+  Science}, vol. 196, pp. 263--271, 2022.
+
 \bibitem{datamesh2022prologue}
 Z.~Dehghani, ``Prologue: Imagine data mesh,'' in \emph{Data Mesh: Delivering
   Data-Driven Value at Scale}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly
@@ -32,11 +37,6 @@ C.~Jochen, V.~Larysa, and S.~Harrer. (2023) Data mesh from an engineering
   perspective. [Online]. Available:
   \url{https://www.datamesh-architecture.com/}
 \BIBentrySTDinterwordspacing
-
-\bibitem{machado2022data}
-I.~A. Machado, C.~Costa, and M.~Y. Santos, ``Data mesh: Concepts and principles
-  of a paradigm shift in data architectures,'' \emph{Procedia Computer
-  Science}, vol. 196, pp. 263--271, 2022.
 
 \bibitem{shiftkpmg}
 \BIBentryALTinterwordspacing
@@ -79,5 +79,9 @@ Z.~Dehghani, ``Principle of data as a product,'' in \emph{Data Mesh: Delivering
 ------, ``How to design the data mesh architecture,'' in \emph{Data Mesh:
   Delivering Data-Driven Value at Scale}.\hskip 1em plus 0.5em minus
   0.4em\relax O'Reilly Media, 2022, pp. 139--190.
+
+\bibitem{norman2002design}
+D.~A. Norman, \emph{The Design of Everyday Things}.\hskip 1em plus 0.5em minus
+  0.4em\relax Basic Books, 2002.
 
 \end{thebibliography}

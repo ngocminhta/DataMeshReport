@@ -6,6 +6,7 @@
 \contentsline {chapter}{Preface}{iii}{Doc-Start}%
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Figures}{vii}{Doc-Start}%
 \contentsline {chapter}{List of Tables}{viii}{Doc-Start}%
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
@@ -26,8 +27,21 @@
 \contentsline {section}{\numberline {2.3}Data Mesh Architecture Design}{12}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}The Logical Architecture}{12}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}The Multiplane Data Platform Architecture}{15}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Data Product Design \& Implementation}{19}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Data Mesh in use}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Data Mesh in combination with Data Lakehouse}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Frameworks and technologies for Data Mesh}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Case study and Demo}{21}{section.4.3}%
+\contentsline {chapter}{\numberline {3}Data Product Design \& Implementation}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Design a Data Product by Affordances}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Consuming, Transforming \& Serving Data}{22}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Serve data}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Consume Data}{23}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Transform Data}{24}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Discovering, Understanding \& Composing Data}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Discover, Understand, Trust, and Explore}{25}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Compose Data}{26}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Managing, Governing \& Observing Data}{27}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Manage the Life Cycle}{27}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Govern Data}{27}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Observe, Debug, and Audit}{28}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {4}Data Mesh in use}{30}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data Mesh in combination with Data Lakehouse}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Frameworks and technologies for Data Mesh}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Case study and Demo}{30}{section.4.3}%
+\contentsline {chapter}{References}{a}{section.4.3}%
