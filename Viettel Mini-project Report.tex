@@ -301,26 +301,28 @@ After the inflection point, data mesh make us reimagine data, specifically how t
 		\hline
 		\endlastfoot
 		
-		\multirow{4}{*}{\parbox{.17\textwidth}{Manage changes to data gracefully in a complex, volatile, and uncertain business environment}} & Align business, tech, and data & Create cross-functional teams responsible for long-term data ownership. \newline \textit{Principle of domain data ownership} \\ \cline{2-3}
-		& Close the gap between the operational and analytical data planes  & Dumb pipes should be used to integrate applications and data products. \newline \textit{Principle of data as a product} \\ \cline{2-3}
-		& Localize data changes to business domains & Localize maintenance and ownership of data products in their specific domains \newline Create clear contracts between domain-oriented data products to reduce impact of change \newline \textit{Principle of data as a product} \\
+		\multirow{4}{*}{\parbox{.17\textwidth}{Manage changes to data gracefully in a complex, volatile, and uncertain business environment}} & Align business, tech, and data & Create cross-functional teams responsible for long-term data ownership.\\
 		\cline{2-3}
-		& Reduce the accidental complexity of pipelines and copying of data & Break down pipelines, move transformation logic into data products. \newline \textit{Principle of data as a product} \newline \textit{Data product quantum architectural component} \\
+		& Close the gap between the operational and analytical data planes  & Dumb pipes should be used to integrate applications and data products.\\ 
+		\cline{2-3}
+		& Localize data changes to business domains & Localize maintenance and ownership of data products in their specific domains \newline Create clear contracts between domain-oriented data products to reduce impact of change.\\
+		\cline{2-3}
+		& Reduce the accidental complexity of pipelines and copying of data & Break down pipelines, move transformation logic into data products.\\
 		\cline{1-3}
 		
-		\multirow{4}{*}{\parbox{.17\textwidth}{Sustain agility in the face of growth}} & Remove centralized architectural bottlenecks & Remove centralized data warehouses and data lakes \newline Enable peer-to-peer data sharing of data products through their data interfaces \newline \textit{Principle of domain ownership} \newline \textit{Principle of data as a product} \\
+		\multirow{4}{*}{\parbox{.17\textwidth}{Sustain agility in the face of growth}} & Remove centralized architectural bottlenecks & Remove centralized data warehouses and data lakes \newline Enable peer-to-peer data sharing of data products through their data interfaces.\\
 		\cline{2-3}
-		& Reduce the coordination of data pipelines & Decomposition of pipeline architecture from functional to domain-oriented. \newline Introduce explicit data contracts between domain-oriented data products. \newline \textit{Principle of domain ownership} \newline \textit{Principle of data as a product} \\
+		& Reduce the coordination of data pipelines & Decomposition of pipeline architecture from functional to domain-oriented. \newline Introduce explicit data contracts between domain-oriented data products.\\
 		\cline{2-3}
-		& Reduce coordination of data governance & Delegate governance responsibilities to autonomous domains and their data product owners \newline Automate governance policies as code embedded and verified by each data product quantum \newline \textit{Principle of federated computational governance} \\
+		& Reduce coordination of data governance & Delegate governance responsibilities to autonomous domains and their data product owners \newline Automate governance policies as code embedded and verified by each data product quantum.\\
 		\cline{2-3}
-		& Enable team autonomy & Give domain teams autonomy in moving fast independently.\newline Balance team autonomy with computational standards to create global consistency.\newline Provide domain-agnostic infrastructure capabilities to empower domain teams.\newline \textit{Principle of federated computational governance} \newline \textit{Principle of the self-serve data platform} \\
+		& Enable team autonomy & Give domain teams autonomy in moving fast independently.\newline Balance team autonomy with computational standards to create global consistency.\newline Provide domain-agnostic infrastructure capabilities to empower domain teams.\\
 		\cline{1-3}
-		\multirow{3}{*}{\parbox{.17\textwidth}{Increase value from data over cost}} & Abstract complexity with a data platform & Create a data-developer-centric and a data-user-centric infrastructure to remove friction and hidden costs in data development and use journeys \newline Define open and standard interfaces for data products to reduce vendor integration complexity \newline \textit{Principle of data as a product} \newline \textit{Principle of the self-serve data platform} \\
+		\multirow{3}{*}{\parbox{.17\textwidth}{Increase value from data over cost}} & Abstract complexity with a data platform & Create a data-developer-centric and a data-user-centric infrastructure to remove friction and hidden costs in data development and use journeys \newline Define open and standard interfaces for data products to reduce vendor integration complexity.\\
 		\cline{2-3}
-		& Embed product thinking everywhere & Focus and measure success based on data user and developer happiness \newline Treat both data and the data platform as a product \newline \textit{Principle of the self-serve data platform} \newline \textit{Principle of data as a product} \\
+		& Embed product thinking everywhere & Focus and measure success based on data user and developer happiness \newline Treat both data and the data platform as a product. \\
 		\cline{2-3}
-		& Go beyond the boundaries of an organization & Share data across physical and logical boundaries of platforms and organizations with standard and internet-based data sharing contracts across data products \newline \textit{Principle of data as a product} \newline \textit{Principle of the self-serve data platform} \\
+		& Go beyond the boundaries of an organization & Share data across physical and logical boundaries of platforms and organizations with standard and internet-based data sharing contracts across data products.\\
 	\end{xltabular}
 
 While the evolution of data architecture has been necessary and an improvement, all of the existing analytical data architectures share a common set of characteristics that inhibit them from scaling organizationally. They are all monolithic with centralized ownership and technically partitioned. It is no longer valid when data gets sources from hundreds of microservices and millions of devices from within and outside of enterprises.
@@ -360,7 +362,7 @@ While the evolution of data architecture has been necessary and an improvement, 
 	\cline{2-3}
 	& Domain operational interfaces & APIs and applications through which a business domain shares its transactional capabilities and state with the wider organization.\\
 	\cline{1-3}
-	\multirow{3}{*}{\parbox{.13\textwidth}{\vskip 5ptData product quantum}} & Data product structural components & Data product implemented as an architecture quantum that encapsulates all the structural components it needs to do its job - code, data, infrastructure specifications, and policies. \newline It is referred to in architectural discussions. It is used interchangeably with data products. \\
+	\multirow{3}{*}{\parbox{.13\textwidth}{\vskip 5pt Data product quantum}} & Data product structural components & Data product implemented as an architecture quantum that encapsulates all the structural components it needs to do its job - code, data, infrastructure specifications, and policies. \newline It is referred to in architectural discussions. It is used interchangeably with data products. \\
 	\cline{2-3}
 	& Data Product Data Sharing Interactions & There are many technologies for implementing a data product’s input and output data port of data mesh, but it shares the common properties:
 	\begin{itemize}[nosep]
@@ -569,6 +571,9 @@ In conclusion, there is no single entity such as a platform but rather a set of 
 
 \let\cleardoublepage\clearpage
 \chapter{Data Product Design \& Implementation}
+\section{Data Product Canvas}
+Emphasis the importance of data product in data mesh
+
 \section{Design a Data Product by Affordances}
 Data mesh is a distributed scale-out architecture that designs data products as self-contained, autonomous, and coequal nodes, providing users and developers with the capabilities they need to do their job: discover, understand, use, build, govern, and debug.
 

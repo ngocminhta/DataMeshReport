@@ -16,18 +16,18 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces The baseline usability attributes of data products (DAUTNIVS)\relax }}{6}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Data contract in organization\relax }}{7}{figure.caption.6}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Example of data mesh governance operating model\relax }}{8}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Data Mesh Logical Architecture \cite {machado2022data}\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Data Mesh Logical Architecture \cite {machado2022data}\relax }}{11}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces The logical architectural components of embedded computational policies\relax }}{11}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Multiplane self-serve platform and platform users\relax }}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces High-level example of data product development journey using the platform\relax }}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of data infrastructure plane to support data product delivery\relax }}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Example of ML model development journey\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces High-level example of data product development journey using the platform\relax }}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of data infrastructure plane to support data product delivery\relax }}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Example of ML model development journey\relax }}{17}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Data product’s high-level components to design serve data\relax }}{19}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Data product’s design to consume data\relax }}{20}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces High-level components to design transformation for data products\relax }}{21}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A data product sidecar provides a unified model of discoverability for all data products\relax }}{22}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Data product’s high-level components to design data composability\relax }}{23}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces High-level interactions to manage the life cycle of a data product\relax }}{24}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces High-level design of embedded policies as code\relax }}{25}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Data product’s high-level components to design serve data\relax }}{20}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Data product’s design to consume data\relax }}{21}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces High-level components to design transformation for data products\relax }}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A data product sidecar provides a unified model of discoverability for all data products\relax }}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Data product’s high-level components to design data composability\relax }}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces High-level interactions to manage the life cycle of a data product\relax }}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces High-level design of embedded policies as code\relax }}{26}{figure.caption.20}%
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.2)  2 JUN 2023 03:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.2)  3 JUN 2023 01:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1920,7 +1920,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 1.
-<CentralDataTeam.jpg, id=209, 813.0375pt x 324.21124pt>
+<CentralDataTeam.jpg, id=211, 813.0375pt x 324.21124pt>
 File: CentralDataTeam.jpg Graphic file (type jpg)
 <use CentralDataTeam.jpg>
 Package pdftex.def Info: CentralDataTeam.jpg  used on input line 110.
@@ -1944,7 +1944,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
 (C:\Users\tango\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<CulturalShift.png, id=222, 1891.065pt x 683.55376pt>
+<CulturalShift.png, id=224, 1891.065pt x 683.55376pt>
 File: CulturalShift.png Graphic file (type png)
 <use CulturalShift.png>
 Package pdftex.def Info: CulturalShift.png  used on input line 148.
@@ -1963,7 +1963,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./CulturalShift.png>]
-<OrgChanges.png, id=231, 126.2316pt x 192.72pt>
+<OrgChanges.png, id=233, 126.2316pt x 192.72pt>
 File: OrgChanges.png Graphic file (type png)
 <use OrgChanges.png>
 Package pdftex.def Info: OrgChanges.png  used on input line 162.
@@ -1991,7 +1991,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 177.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 177.
-<DecomposeData.png, id=240, 754.82pt x 579.16376pt>
+<DecomposeData.png, id=242, 754.82pt x 579.16376pt>
 File: DecomposeData.png Graphic file (type png)
 <use DecomposeData.png>
 Package pdftex.def Info: DecomposeData.png  used on input line 189.
@@ -2010,7 +2010,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4
 
 ]
-<dautnivs.png, id=248, 662.475pt x 578.91281pt>
+<dautnivs.png, id=250, 662.475pt x 578.91281pt>
 File: dautnivs.png Graphic file (type png)
 <use dautnivs.png>
 Package pdftex.def Info: dautnivs.png  used on input line 209.
@@ -2028,7 +2028,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5 <./DecomposeData.png>]
-<boring.jpg, id=264, 602.25pt x 401.24907pt>
+<boring.jpg, id=266, 602.25pt x 401.24907pt>
 File: boring.jpg Graphic file (type jpg)
 <use boring.jpg>
 Package pdftex.def Info: boring.jpg  used on input line 234.
@@ -2046,7 +2046,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6 <./dautnivs.png>]
-<DataGov.png, id=272, 706.89093pt x 505.13719pt>
+<DataGov.png, id=274, 706.89093pt x 505.13719pt>
 File: DataGov.png Graphic file (type png)
 <use DataGov.png>
 Package pdftex.def Info: DataGov.png  used on input line 275.
@@ -2064,221 +2064,221 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7 <./boring.jpg>]
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []\T1/ppl/m/n/12 Manage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 changes to
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 324--324
+Underfull \hbox (badness 3364) in paragraph at lines 326--326
 \T1/ppl/m/n/12 in a com-plex,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 volatile, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 un-cer-tain
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 busi-ness
  []
 
 
-Overfull \vbox (52.07393pt too high) detected at line 324
+Overfull \vbox (52.07393pt too high) detected at line 326
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 324--324
+Underfull \hbox (badness 2662) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Close the gap
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 be-tween the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 op-er-a-tional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 and an-a-lyt-i-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Localize data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 changes to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 busi-ness
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 324--324
+Underfull \hbox (badness 2744) in paragraph at lines 326--326
 \T1/ppl/m/n/12 Create clear con-tracts be-tween domain-oriented
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Reduce the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 ac-ci-den-tal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 com-plex-ity of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 pipelines and
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 324--324
+Underfull \hbox (badness 4660) in paragraph at lines 326--326
 []\T1/ppl/m/n/12 Sustain agility
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 324--324
+Underfull \hbox (badness 1924) in paragraph at lines 326--326
 \T1/ppl/m/n/12 in the face of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Remove
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 cen-tral-ized
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 ar-chi-tec-tural
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Reduce the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Reduce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 co-or-di-na-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 of data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Enable team
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 324--324
+Underfull \hbox (badness 4713) in paragraph at lines 326--326
 []\T1/ppl/m/n/12 Increase value
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Abstract
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 com-plex-ity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 with a data
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 324--324
+Underfull \hbox (badness 1107) in paragraph at lines 326--326
 []|\T1/ppl/m/n/12 Create a data-developer-centric and a data-user-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 think-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/ppl/m/n/12 bound-aries of
  []
 
@@ -2291,11 +2291,252 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [8 <./DataGov.png>]
-<LogicalArchitecture.png, id=285, 1067.48813pt x 503.8825pt>
+<LogicalArchitecture.png, id=287, 1067.48813pt x 503.8825pt>
 File: LogicalArchitecture.png Graphic file (type png)
 <use LogicalArchitecture.png>
-Package pdftex.def Info: LogicalArchitecture.png  used on input line 333.
+Package pdftex.def Info: LogicalArchitecture.png  used on input line 335.
 (pdftex.def)             Requested size: 312.9803pt x 147.73679pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\T1/ppl/b/n/12 Architectural
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\T1/ppl/b/n/12 Architectural
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\T1/ppl/m/n/12 Domain-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 Ori-ented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 Shar-ing
+ []
+
+
+Overfull \vbox (28.07391pt too high) detected at line 388
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Domain
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 an-a-lyt-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Domain
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 op-er-a-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\T1/ppl/m/n/12 Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 prod-uct
+ []
+
+
+Overfull \vbox (2.19989pt too high) detected at line 388
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Data prod-uct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 struc-tural
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Data Prod-uct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 Data Shar-ing
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Discovery and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 ob-serv-abil-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\T1/ppl/m/n/12 The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 Mul-ti-plane
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 in-fras-truc-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Data prod-uct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+\T1/ppl/m/n/12 ex-pe-ri-ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Mesh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]\T1/ppl/m/n/12 Embedded
+ []
+
+
+Overfull \hbox (17.564pt too wide) in paragraph at lines 388--388
+\T1/ppl/m/n/12 Com-pu-ta-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Data prod-uct
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/12 Data prod-uct
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2306,266 +2547,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [9]
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]\T1/ppl/b/n/12 Architectural
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]\T1/ppl/b/n/12 Architectural
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]\T1/ppl/m/n/12 Domain-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 Ori-ented
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 Data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 Shar-ing
- []
-
-
-Overfull \vbox (28.07391pt too high) detected at line 386
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Domain
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 an-a-lyt-i-cal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Domain
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 op-er-a-tional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]\T1/ppl/m/n/12 Data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 prod-uct
- []
-
-
-Overfull \vbox (2.19989pt too high) detected at line 386
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Data prod-uct
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 struc-tural
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Data Prod-uct
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 Data Shar-ing
- []
-
-
-Underfull \hbox (badness 3108) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Discovery and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 ob-serv-abil-ity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]\T1/ppl/m/n/12 The
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 Mul-ti-plane
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 Data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 in-fras-truc-ture
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Data prod-uct
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-\T1/ppl/m/n/12 ex-pe-ri-ence
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Mesh
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]\T1/ppl/m/n/12 Embedded
- []
-
-
-Overfull \hbox (17.564pt too wide) in paragraph at lines 386--386
-\T1/ppl/m/n/12 Com-pu-ta-tional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Data prod-uct
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
-[]|\T1/ppl/m/n/12 Data prod-uct
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[10 <./LogicalArchitecture.png>]
-<LogicalComponents.png, id=297, 739.76375pt x 490.83376pt>
+<LogicalComponents.png, id=294, 739.76375pt x 490.83376pt>
 File: LogicalComponents.png Graphic file (type png)
 <use LogicalComponents.png>
-Package pdftex.def Info: LogicalComponents.png  used on input line 391.
+Package pdftex.def Info: LogicalComponents.png  used on input line 393.
 (pdftex.def)             Requested size: 284.52756pt x 188.7806pt.
-<multiplane.png, id=300, 745.78625pt x 638.385pt>
-File: multiplane.png Graphic file (type png)
-<use multiplane.png>
-Package pdftex.def Info: multiplane.png  used on input line 406.
-(pdftex.def)             Requested size: 341.43306pt x 292.25795pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<multiplane.png, id=297, 745.78625pt x 638.385pt>
+File: multiplane.png Graphic file (type png)
+<use multiplane.png>
+Package pdftex.def Info: multiplane.png  used on input line 408.
+(pdftex.def)             Requested size: 341.43306pt x 292.25795pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2574,235 +2569,249 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11 <./LogicalComponents.png>]
-<DataProductDevJourney.png, id=308, 629.35126pt x 309.65688pt>
+[10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<DataProductDevJourney.png, id=303, 629.35126pt x 309.65688pt>
 File: DataProductDevJourney.png Graphic file (type png)
 <use DataProductDevJourney.png>
-Package pdftex.def Info: DataProductDevJourney.png  used on input line 419.
+Package pdftex.def Info: DataProductDevJourney.png  used on input line 421.
 (pdftex.def)             Requested size: 284.52756pt x 139.99162pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12 <./multiplane.png> <./DataProductDevJourney.png>]
 (C:\Users\tango\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|\T1/ppl/b/n/12 Platform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|\T1/ppl/b/n/12 Platform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|\T1/ppl/b/n/12 Platform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|\T1/ppl/b/n/12 Platform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/ppl/m/n/12 Incept
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/ppl/m/n/12 Mesh
  []
 
 
-LaTeX Warning: \verb may be unreliable inside tabularx on input line 501.
+LaTeX Warning: \verb may be unreliable inside tabularx on input line 503.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /knowledge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/ppl/m/n/12 Bootstrap
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/ppl/m/n/12 Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 \T1/ppl/m/n/12 prod-uct
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /{dp}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /{dp}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /{dp}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/cmtt/m/n/12 {output}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/cmtt/m/n/12 query
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/cmtt/m/n/12 /{dp}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/cmtt/m/n/12 {output}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|\T1/ppl/m/n/12 Mesh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/ppl/m/n/12 Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 \T1/ppl/m/n/12 prod-uct
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /start
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 \T1/ppl/m/n/12 De-ploy/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /local-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 \T1/ppl/m/n/12 De-ploy/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|\T1/ppl/m/n/12 Mesh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /global-
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 501--501
+Underfull \hbox (badness 2253) in paragraph at lines 503--503
 []|\T1/ppl/m/n/12 The plat-form en-ables au-thor-ing of the
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 501--501
+Underfull \hbox (badness 1127) in paragraph at lines 503--503
 \T1/ppl/m/n/12 global poli-cies and ap-pli-ca-tion of these
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/ppl/m/n/12 Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 \T1/ppl/m/n/12 prod-uct
  []
 
 
-Overfull \hbox (6.13904pt too wide) in paragraph at lines 501--501
+Overfull \hbox (6.13904pt too wide) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /{dp}/status| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|\T1/ppl/m/n/12 Maintain,
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 501--501
+Underfull \hbox (badness 1057) in paragraph at lines 503--503
 \T1/ppl/m/n/12 Evolve, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /{dp}/logs
  []
 
 
-Overfull \hbox (6.13904pt too wide) in paragraph at lines 501--501
+Overfull \hbox (6.13904pt too wide) in paragraph at lines 503--503
 []\T1/cmtt/m/n/12 /{dp}/traces
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/cmtt/m/n/12 /{dp}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /{dp}/
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 501--501
+Underfull \hbox (badness 1137) in paragraph at lines 503--503
 []|\T1/ppl/m/n/12 Tracking the op-er-a-tional cost of a data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /{dp}/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []\T1/ppl/m/n/12 Mesh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /notificat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 []|[]\T1/cmtt/m/n/12 /global-
  []
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11 <./LogicalArchitecture.png> <./LogicalComponents.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12 <./multiplane.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2812,82 +2821,82 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [13]
-<DataInfras.png, id=331, 563.10374pt x 560.8453pt>
+<DataInfras.png, id=332, 563.10374pt x 560.8453pt>
 File: DataInfras.png Graphic file (type png)
 <use DataInfras.png>
-Package pdftex.def Info: DataInfras.png  used on input line 509.
+Package pdftex.def Info: DataInfras.png  used on input line 511.
 (pdftex.def)             Requested size: 298.75394pt x 297.55467pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []|\T1/ppl/b/n/12 Platform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []|\T1/ppl/b/n/12 Platform
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []\T1/ppl/m/n/12 Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 \T1/ppl/m/n/12 prod-uct
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []|[]\T1/cmtt/m/n/12 /{dp}/logs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []\T1/cmtt/m/n/12 /{dp}/traces
  []
 
 
-Overfull \hbox (4.64986pt too wide) in paragraph at lines 551--551
+Overfull \hbox (4.64986pt too wide) in paragraph at lines 553--553
 []|[]\T1/cmtt/m/n/12 /{dp}/accesses| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []\T1/ppl/m/n/12 Mesh
  []
 
 
-Overfull \hbox (4.64986pt too wide) in paragraph at lines 551--551
+Overfull \hbox (4.64986pt too wide) in paragraph at lines 553--553
 []|[]\T1/cmtt/m/n/12 /notifications| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []|[]\T1/cmtt/m/n/12 /global-
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 551--551
+Underfull \hbox (badness 1194) in paragraph at lines 553--553
 []|\T1/ppl/m/n/12 Ability to in-voke high-privileged ad-min-is-tra-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 []|\T1/ppl/m/n/12 Data prod-uct
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 553--553
 \T1/ppl/m/n/12 ex-pe-ri-ence
  []
 
 
-Overfull \hbox (4.64986pt too wide) in paragraph at lines 551--551
+Overfull \hbox (4.64986pt too wide) in paragraph at lines 553--553
 []|[]\T1/cmtt/m/n/12 /{dp}/controls| 
  []
 
@@ -2900,22 +2909,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[15 <./DataInfras.png>]
-<MLJourney.png, id=343, 523.9575pt x 550.30594pt>
+<MLJourney.png, id=339, 523.9575pt x 550.30594pt>
 File: MLJourney.png Graphic file (type png)
 <use MLJourney.png>
-Package pdftex.def Info: MLJourney.png  used on input line 562.
+Package pdftex.def Info: MLJourney.png  used on input line 564.
 (pdftex.def)             Requested size: 298.75394pt x 313.7868pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -2923,21 +2926,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16 <./MLJourney.png>]
+[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16 <./DataProductDevJourney.png> <./DataInfras.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17 <./MLJourney.png>]
 Chapter 3.
 
-Overfull \hbox (1.24202pt too wide) in paragraph at lines 573--574
+Overfull \hbox (1.24202pt too wide) in paragraph at lines 578--579
 []\T1/ppl/m/n/12 Data mesh is a dis-tributed scale-out ar-chi-tec-ture that de-
 signs data prod-ucts as self-contained,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--613
+Underfull \hbox (badness 10000) in paragraph at lines 618--618
 []|\T1/ppl/m/n/12 Discover |
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--613
+Underfull \hbox (badness 10000) in paragraph at lines 618--618
 \T1/ppl/m/n/12 Un-der-stand
  []
 
@@ -2949,15 +2970,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[17
+[18
 
 ]
-<ServeData.png, id=358, 678.28406pt x 409.53pt>
-File: ServeData.png Graphic file (type png)
-<use ServeData.png>
-Package pdftex.def Info: ServeData.png  used on input line 638.
-(pdftex.def)             Requested size: 298.75394pt x 180.37497pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2966,23 +2981,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 704--704
+[19]
+<ServeData.png, id=368, 678.28406pt x 409.53pt>
+File: ServeData.png Graphic file (type png)
+<use ServeData.png>
+Package pdftex.def Info: ServeData.png  used on input line 643.
+(pdftex.def)             Requested size: 298.75394pt x 180.37497pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--709
 []|\T1/ppl/m/n/12 Input data port
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--704
+Underfull \hbox (badness 10000) in paragraph at lines 709--709
 []|\T1/ppl/m/n/12 Asynchronous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--704
+Underfull \hbox (badness 10000) in paragraph at lines 709--709
 []|\T1/ppl/m/n/12 Input port
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 704--704
+Underfull \hbox (badness 10000) in paragraph at lines 709--709
 \T1/ppl/m/n/12 syn-chro-nizer and
  []
 
@@ -2994,38 +3015,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[19 <./ServeData.png>]
-<ConsumeData.png, id=368, 679.03688pt x 478.03593pt>
+[20 <./ServeData.png>]
+<ConsumeData.png, id=374, 679.03688pt x 478.03593pt>
 File: ConsumeData.png Graphic file (type png)
 <use ConsumeData.png>
-Package pdftex.def Info: ConsumeData.png  used on input line 709.
+Package pdftex.def Info: ConsumeData.png  used on input line 714.
 (pdftex.def)             Requested size: 298.75394pt x 210.31458pt.
 
-Overfull \hbox (3.84576pt too wide) in paragraph at lines 720--721
+Overfull \hbox (3.84576pt too wide) in paragraph at lines 725--726
 []\T1/ppl/m/n/12 Dataflow-Based: Dataflow pro-gram-ming is a nat-u-ral paradigm
  for im-ple-ment-ing trans-
  []
 
-<TransformData.png, id=369, 679.03688pt x 475.02469pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[21 <./ConsumeData.png>]
+<TransformData.png, id=380, 679.03688pt x 475.02469pt>
 File: TransformData.png Graphic file (type png)
 <use TransformData.png>
-Package pdftex.def Info: TransformData.png  used on input line 728.
+Package pdftex.def Info: TransformData.png  used on input line 733.
 (pdftex.def)             Requested size: 298.75394pt x 208.98975pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 []|\T1/ppl/m/n/12 Transformation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 []|\T1/ppl/m/n/12 Transformation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 \T1/ppl/m/n/12 run-time
  []
 
@@ -3037,26 +3064,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[20 <./ConsumeData.png>]
-<DiscoverData.png, id=375, 609.02531pt x 668.4975pt>
+[22 <./TransformData.png>]
+<DiscoverData.png, id=389, 609.02531pt x 668.4975pt>
 File: DiscoverData.png Graphic file (type png)
 <use DiscoverData.png>
-Package pdftex.def Info: DiscoverData.png  used on input line 777.
+Package pdftex.def Info: DiscoverData.png  used on input line 782.
 (pdftex.def)             Requested size: 298.75394pt x 327.93385pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[21 <./TransformData.png>]
-<ComposeData.png, id=386, 706.13812pt x 599.23875pt>
+<ComposeData.png, id=390, 706.13812pt x 599.23875pt>
 File: ComposeData.png Graphic file (type png)
 <use ComposeData.png>
-Package pdftex.def Info: ComposeData.png  used on input line 791.
+Package pdftex.def Info: ComposeData.png  used on input line 796.
 (pdftex.def)             Requested size: 298.75394pt x 253.52557pt.
 
 
@@ -3067,14 +3084,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22 <./DiscoverData.png>]
-<ManageLifeCycle.png, id=392, 666.99188pt x 508.14844pt>
+[23 <./DiscoverData.png>]
+<ManageLifeCycle.png, id=399, 666.99188pt x 508.14844pt>
 File: ManageLifeCycle.png Graphic file (type png)
 <use ManageLifeCycle.png>
-Package pdftex.def Info: ManageLifeCycle.png  used on input line 804.
+Package pdftex.def Info: ManageLifeCycle.png  used on input line 809.
 (pdftex.def)             Requested size: 298.75394pt x 227.61017pt.
 
-Underfull \hbox (badness 1533) in paragraph at lines 839--839
+Underfull \hbox (badness 1533) in paragraph at lines 844--844
 []|\T1/ppl/m/n/12 Data prod-uct in-cludes trans-for-ma-tion code and in-put por
 ts
  []
@@ -3087,11 +3104,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[23 <./ComposeData.png>]
-<GovernData.png, id=399, 704.6325pt x 542.025pt>
+[24 <./ComposeData.png>]
+<GovernData.png, id=405, 704.6325pt x 542.025pt>
 File: GovernData.png Graphic file (type png)
 <use GovernData.png>
-Package pdftex.def Info: GovernData.png  used on input line 847.
+Package pdftex.def Info: GovernData.png  used on input line 852.
 (pdftex.def)             Requested size: 298.75394pt x 229.80757pt.
 
 
@@ -3102,7 +3119,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[24 <./ManageLifeCycle.png>]
+[25 <./ManageLifeCycle.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -3111,7 +3128,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[25 <./GovernData.png>]
+[26 <./GovernData.png>]
 Chapter 4.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3121,7 +3138,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26
+[27
 
 ] (Viettel Mini-project Report.bbl)
 
@@ -3144,10 +3161,10 @@ AED: lastpage setting LastPage
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 36686 strings out of 475385
- 687705 string characters out of 2776908
- 1158407 words of memory out of 3000000
- 57194 multiletter control sequences out of 15000+600000
+ 36689 strings out of 475385
+ 687729 string characters out of 2776908
+ 1160401 words of memory out of 3000000
+ 57195 multiletter control sequences out of 15000+600000
  568975 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,108p,1003b,1175s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -3161,9 +3178,9 @@ tino/uplb8a.pfb><C:/Users/tango/AppData/Local/Programs/MiKTeX/fonts/type1/vntex
 vntex/urwvn/uplr8v.pfb><C:/Users/tango/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/palatino/uplri8a.pfb><C:/Users/tango/AppData/Local/Programs/MiKTeX/fonts/
 type1/vntex/urwvn/uplri8v.pfb>
-Output written on "Viettel Mini-project Report.pdf" (35 pages, 6766902 bytes).
+Output written on "Viettel Mini-project Report.pdf" (36 pages, 6768657 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
- 526 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 534 words of extra memory for PDF output out of 10000 (max. 10000000)
 
