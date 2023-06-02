@@ -70,10 +70,17 @@ Z.~Dehghani, ``Principle of data as a product,'' in \emph{Data Mesh: Delivering
   Data-Driven Value at Scale}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly
   Media, 2022, pp. 29--46.
 
+\bibitem{contract}
+\BIBentryALTinterwordspacing
+S.~Michael. (2023) Data contracts – everything you need to know. [Online].
+  Available:
+  \url{https://www.montecarlodata.com/blog-data-contracts-explained/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{datamesh2022p2}
-------, ``Why data mesh?'' in \emph{Data Mesh: Delivering Data-Driven Value at
-  Scale}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly Media, 2022, pp.
-  93--137.
+Z.~Dehghani, ``Why data mesh?'' in \emph{Data Mesh: Delivering Data-Driven
+  Value at Scale}.\hskip 1em plus 0.5em minus 0.4em\relax O'Reilly Media, 2022,
+  pp. 93--137.
 
 \bibitem{datamesh2022p3}
 ------, ``How to design the data mesh architecture,'' in \emph{Data Mesh:

@@ -225,6 +225,34 @@ Define these roles for each domain and allocate one or multiple people to the ro
 		\item Join Data and Compute as One Logical Unit.
 	\end{itemize}
 
+\subsection{Data contract}
+Data contract is an agreement between a service provider and data consumers. It is not in-depth legal documents, but a process to help data producers and data consumers get on the same page. It refers to the management and intended usage of data between different organizations to ensure reliable and high-quality data that can be trusted by all parties involved. \cite{contract}
+
+\begin{figure}[h]
+	\begin{framed}
+		\centering
+		\includegraphics[width=11cm]{boring.jpg}
+		\caption{Data contract in organization}
+		\label{datacontract}
+	\end{framed}
+\end{figure}
+
+Data contract enforces specific formats, limitations, and semantic meanings to prevent data quality difficulties when it brought into data warehouse is unusable by data consumers.
+
+The data mesh strategy is a critical notion for ensuring that data responsibilities are dispersed across domains. Data contract is the method that helps producers and consumers communicate effectively, and they are especially critical when dealing with widely spread data.
+
+Data contracts vary depending on data and organization, there is no standardization for them, but normally, we have:
+	\begin{itemize}
+		\item What data is being extracted.
+		\item Type and frequency of consumption.
+		\item Details of data ownership/ingestion.
+		\item Levels of data access necessary.
+		\item Information on security and governance (e.g., anonymization).
+		\item How it affects any system(s) that intake may have an effect on.
+	\end{itemize}
+
+As organizations move towards a data mesh approach, and data is viewed as a product, organizations must create data contracts to keep data connected and running smoothly.
+
 \subsection{Principle of the Self-Serve Data Platform}
 The principle aims to empower domain teams by hiding low-level complexity behind simpler abstractions and minimizing friction from their journeys to exchanging data products as a unit of value, using decentralized, interoperable methods.
 
@@ -253,15 +281,6 @@ To bring these three pillars together, Figure \ref{DataGov} shows an example of 
 Data mesh governance seeks to improve existing data governance by finding the dynamic equilibrium between localization and globalization of decisions. It requires trustworthiness and useful data across multiple domains to train ML-based solutions.
 
 \section{Why we need Data Mesh?}
-\begin{figure}[h]
-	\begin{framed}
-		\centering
-		\includegraphics[width=11cm]{MacroDrivers.png}
-		\caption{Macro drivers for the creation of data mesh}
-		\label{MacroDrivers}
-	\end{framed}
-\end{figure}
-
 Data mesh is what comes after an inflection point, shifting our approach, attitude, and technology toward data. Data mesh assumes a new default starting state: proliferation of data origins within and beyond organizations’ boundaries, on one or across multiple cloud platforms.
 
 After the inflection point, data mesh make us reimagine data, specifically how to design solutions to manage it, how to govern it, and how to structure our teams: \cite{datamesh2022p2}
@@ -318,7 +337,7 @@ While the evolution of data architecture has been necessary and an improvement, 
 \end{figure}
 
 \begin{xltabular}{\textwidth}{||s|m|b|}
-	\caption{Data mesh logical architectural components and their maturity} \label{tab:LogicArch} \\
+	\caption{Data mesh logical architectural components} \label{tab:LogicArch} \\
 	
 	\hline \multicolumn{1}{||s|}{\textbf{Aspect}} & \multicolumn{1}{m|}{\parbox{.17\textwidth}{\textbf{Architectural component}}} & \multicolumn{1}{b|}{\textbf{Description}} \\ \hline 
 	\endfirsthead
@@ -334,38 +353,36 @@ While the evolution of data architecture has been necessary and an improvement, 
 	\hline
 	\endlastfoot
 	
-	\multirow{3}{*}{\parbox{.13\textwidth}{Domain- Oriented  Data Sharing Interfaces}} & Domain & Systems, data products, and a cross-functional team aligned to serve a business domain function and outcomes and share its analytical and operational capabilities with the wider business and customers. \newline \textit{This is a well-established concept.} \\
+	\multirow{3}{*}{\parbox{.13\textwidth}{\vskip 5pt Domain- Oriented  Data Sharing Interfaces}} & Domain & Systems, data products, and a cross-functional team aligned to serve a business domain function and outcomes and share its analytical and operational capabilities with the wider business and customers. \\
 	\cline{2-3}
 	& Domain analytical data interfaces & Standardized interfaces that discover, access, and share domain-oriented data products.\newline
-	\textit{Up to now, the implementation of these APIs is custom or platform specific.}\newline
 	The proprietary platforms need to offer open interfaces to make data sharing more convenient and interoperable with other hosting platforms. \\
 	\cline{2-3}
-	& Domain operational interfaces & APIs and applications through which a business domain shares its transactional capabilities and state with the wider organization. \newline 
-	\textit{This concept has mature implementations.} \newline It is supported by de facto standards such as REST, GraphQL, gRPC, etc. \\
+	& Domain operational interfaces & APIs and applications through which a business domain shares its transactional capabilities and state with the wider organization.\\
 	\cline{1-3}
-	\multirow{3}{*}{\parbox{.13\textwidth}{Data product quantum}} & Data product structural components & Data product implemented as an architecture quantum that encapsulates all the structural components it needs to do its job—code, data, infrastructure specifications, and policies. \newline It is referred to in architectural discussions. It is used interchangeably with data products. \newline \textit{At the time of writing this is an experimental concept with custom implementations.} \\
+	\multirow{3}{*}{\parbox{.13\textwidth}{\vskip 5ptData product quantum}} & Data product structural components & Data product implemented as an architecture quantum that encapsulates all the structural components it needs to do its job - code, data, infrastructure specifications, and policies. \newline It is referred to in architectural discussions. It is used interchangeably with data products. \\
 	\cline{2-3}
 	& Data Product Data Sharing Interactions & There are many technologies for implementing a data product’s input and output data port of data mesh, but it shares the common properties:
 	\begin{itemize}[nosep]
-		\item \textbf{Input data port:} A data product’s mechanisms to continuously receive data from one or multiple upstream sources. \newline \textit{At the time of writing this has custom implementations with existing event streaming and pipeline management technologies.}
-		\item \textbf{Output data port:} A data product’s standardized APIs to continuously share data. \newline \textit{At the time of writing this has vendor-specific custom implementations.} \newline \textit{A mature implementation of the concept requires open data sharing standards with support for multiple modes of access to temporal data.}
+		\item \textbf{Input data port:} A data product’s mechanisms to continuously receive data from one or multiple upstream sources.
+		\item \textbf{Output data port:} A data product’s standardized APIs to continuously share data. \vspace{-.3cm}
 	\end{itemize} \\
 	\cline{2-3}
-	& Discovery and observability APIs & A data product’s standard APIs to provide discoverability information - to find, address, learn, and explore a data product - and observability information such as lineage, metrics, logs, etc. \newline \textit{At the time of writing custom implementations of these APIs have been built.} \newline \textit{A mature implementation requires open standards for discoverability and observabilityinformation modeling and sharing. Some standards\footnote{OpenLineage is an example of an observability open standard that data products can adopt.} are currently under development.} \\
+	& Discovery and observability APIs & A data product’s standard APIs to provide discoverability information - to find, address, learn, and explore a data product - and observability information such as lineage, metrics, logs, etc.\\
 	\cline{1-3}
-	\multirow{4}{*}{\parbox{.13\textwidth}{The Multiplane Data Platform}} & Platform plane & A group of self-serve platform capabilities with high functional cohesion surfaced through APIs. \newline \textit{This is a general concept and well established.} \\
+	\multirow{4}{*}{\parbox{.13\textwidth}{The Multiplane Data Platform}} & Platform plane & A group of self-serve platform capabilities with high functional cohesion surfaced through APIs.\\
 	\cline{2-3}
-	& Data infrastructure (utility) plane & Platform plane providing low-level infrastructure resource management - compute, storage, identity, etc. \newline \textit{The infrastructure plane is mature and supported by many vendors with automated provisioning.} \\
+	& Data infrastructure (utility) plane & Platform plane providing low-level infrastructure resource management - compute, storage, identity, etc.\\
 	\cline{2-3}
-	& Data product experience plane & Platform plan providing operations on a data product. \newline \textit{Custom implementation of services for data product experience plane, no reference implementation available.} \\
+	& Data product experience plane & Platform plan providing operations on a data product.\\
 	\cline{2-3}
-	& Mesh experience & Platform plane providing operations on the mesh of connected data products. \newline \textit{Custom implementations of discovery and search services have been implemented, but no reference implementation exists.} \\
+	& Mesh experience & Platform plane providing operations on the mesh of connected data products.\\
 	\cline{1-3}
-	\multirow{4}{*}{\parbox{.13\textwidth}{Embedded Computational Policies \footnote{See figure \ref{LogicalComponents}}}} & Data product container & A mechanism to bundle all the structural components of a data product, deployed and run as a single unit with its sidecar. \newline \textit{At the time of writing this is an experimental concept with custom implementations.} \\
+	\multirow{4}{*}{\parbox{.13\textwidth}{Embedded Computational Policies}} & Data product container & A mechanism to bundle all the structural components of a data product, deployed and run as a single unit with its sidecar.\\
 	\cline{2-3}
-	& Data product sidecar & The accompanying process to the data product implements cross-functional and standardized behaviors. This still is an experimental concept with custom implementations. \\
+	& Data product sidecar & The accompanying process to the data product implements cross-functional and standardized behaviors.\\
 	\cline{2-3}
-	& Control port & A data product’s standard APIs to configure policies or perform highly privileged governance operations. \newline \textit{At the time of writing this concept is experimental.} \\
+	& Control port & A data product’s standard APIs to configure policies or perform highly privileged governance operations.\\
 \end{xltabular}
 
 \begin{figure}[h]
@@ -376,7 +393,7 @@ While the evolution of data architecture has been necessary and an improvement, 
 		\label{LogicalComponents}
 	\end{framed}
 \end{figure}
-
+\vspace{-.5cm}
 It is intentionally that the technology evolves to the point that we can get the logical architecture and its physical implementation as close to each other as possible. \cite{datamesh2022p3}
 
 
@@ -390,21 +407,22 @@ As we have discussed previously, the multiplane data platform consists of three 
 		\caption{Multiplane self-serve platform and platform users}
 		\label{multiplane}
 	\end{framed}
+	\vspace{-.5cm}
 \end{figure}
 
 The data product experience plane provides operations on a data product and manages the complexity of provisioning its underlying infrastructure, while the data infrastructure utility plane optimizes the resources' performance and utilization to get the best out of the underlying infrastructure providers. The most important idea is to understand the main journeys of the platform users and evaluate how to make it easy for them to complete their journeys.
-
+\vspace{-.3cm}
 \subsubsection*{Data Product Developer Journey}
-Creating and operating a data product is one of the most important journeys of a data product developer. This is a comprehensive and long-term obligation that adheres to the continuous delivery premise of "everyone is responsible." A data product development journey interacts with other journeys. Let’s look at the figure \ref{DataProductDevJourney} for an example of high-level stages of data product development and how the platform interfaces are designed to support them.
-
 \begin{figure}[h]
 	\begin{framed}
 		\centering
-		\includegraphics[width=12cm]{DataProductDevJourney.png}
+		\includegraphics[width=10cm]{DataProductDevJourney.png}
 		\caption{High-level example of data product development journey using the platform}
 		\label{DataProductDevJourney}
 	\end{framed}
 \end{figure}
+
+Creating and operating a data product is one of the most important journeys of a data product developer. This is a comprehensive and long-term obligation that adheres to the continuous delivery premise of "everyone is responsible." A data product development journey interacts with other journeys. Let’s look at the figure \ref{DataProductDevJourney} for an example of high-level stages of data product development and how the platform interfaces are designed to support them.
 
 We should go deeper to consider each stage of the platform planes and interfaces
 \begin{xltabular}{\textwidth}{||s|m|m|b|}
@@ -463,7 +481,7 @@ We should go deeper to consider each stage of the platform planes and interfaces
 	\multicolumn{4}{||l|}{{\textbf{Data product maintenance}}} \\
 	\cline{1-4} 
 	
-	& \multirow{5}{*}{\parbox{.13\textwidth}{Data product experience}} & \verb*|/{dp}/status| & Checking the status of a data product. \\
+	& \multirow{6}{*}{\parbox{.13\textwidth}{Data product experience}} & \verb*|/{dp}/status| & Checking the status of a data product. \\
 	\cline{3-4}
 	Maintain, Evolve, and Retire & & \verb*|/{dp}/logs| \verb*|/{dp}/traces| \verb*|/{dp}/| \verb*|metrics| & Data products emit runtime observability information such as logs, traces, and metrics to be used by mesh layer monitoring services. \\
 	\cline{3-4}
@@ -472,16 +490,16 @@ We should go deeper to consider each stage of the platform planes and interfaces
 	& & \verb*|/{dp}/cost| & Tracking the operational cost of a data product. This can be calculated based on the resource allocation and usage. \\
 	\cline{3-4}
 	& & \verb*|/migrate| & Updating a data product revision is a simple process of build and deploy. \\
+	\cline{3-4}
+	& & \verb*|/{dp}/| \verb*|controls| & Data products are registered with a unique global identifier and address, making them visible to governance. \\
 	\cline{2-4}
 	& \multirow{3}{*}{\parbox{.13\textwidth}{Mesh experience}}& \verb*|/monitor| & Multiple monitoring abilities at the mesh level, logs, status, compliance, etc. \\
 	\cline{3-4}
 	& & \verb*|/notificat| \verb*|ions|& Notification and alerting in response to detected anomalies of the mesh. \\
 	\cline{3-4}
 	& & \verb*|/global-| \verb*|controls| & High-privilege administrative controls can be invoked on data products. \\
-	\cline{2-4}
-	& Data product experience plane & \verb*|/{dp}/| \verb*|controls| & Data products are registered with a unique global identifier and address, making them visible to governance. \\
 \end{xltabular}
-
+\vspace{-.3cm}
 The data infrastructure plane is a key enabler in lowering the cost and effort required to code or configure components of a data product. Developers interact with the data product experience plane to build, deploy, and test a single data quantum. The data product experience plane delegates the implementation of the data product components to the data infrastructure plane.
 
 \begin{figure}[h]
@@ -533,21 +551,21 @@ The data infrastructure plane is a key enabler in lowering the cost and effort r
 \end{xltabular}
 
 \subsubsection*{Data Product Consumer Journey}
-A data consumer is a user with various skill sets and responsibilities, such as consuming existing data products to train an ML model and then deploying it as a data product. ML models can belong to either plane. For example, an ML model can be deployed as a microservice to make inferences online as the end user makes requests. Alternatively, an ML model can be deployed as the trans‐formation logic of a data product.
+A data consumer is a user with various skills and responsibilities, such as consuming existing data products to train an ML model and then deploying it as a data product. ML models can be deployed as a microservice or as the transformation logic of a data product.
 
-The data scientist's journey to continuously deliver an ML model as a data product follows the practice of continuous delivery for machine learning (CD4ML\footnote{This process is also known as MLOps; however, I use the CD4ML notation since it overlays and integrates closely with continuous delivery of software and data products.}) to continuously hypothesize, train, deploy, monitor, and improve the model in rapid feedback loops. The figure \ref{MLJourney} illustrate this journey.
+The data scientist's journey to continuously deliver an ML model as a data product follows the practice of continuous delivery for ML (CD4ML\footnote{This process is also known as MLOps; however, I use the CD4ML notation since it overlays and integrates closely with continuous delivery of software and data products.}) to continuously hypothesize, train, deploy, monitor, and improve the model in rapid feedback loops. The figure \ref{MLJourney} illustrate this journey.
 
 \begin{figure}[h]
 	\vspace*{-.3cm}
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{MLJourney.png}
-		\caption{Example of data infrastructure plane to support data product delivery}
+		\caption{Example of ML model development journey}
 		\label{MLJourney}
 	\end{framed}
 \end{figure}
 
-In conclusion, there is no single entity such as a platform but rather a set of well-integrated services, such as APIs, services, SDKs, and libraries that provide a seamless experience for users. Additionally, the separation of planes should be respected to optimize both for the human experience and machine efficiency. For example, the data product experience plane should optimize the user experience at the logical level, while the data infrastructure plane should optimize for the machine. Lower plane optimization decisions should not impair the developer experience, and vice versa.
+In conclusion, there is no single entity such as a platform but rather a set of well-integrated services, such as APIs, SDKs, and libraries that provide a seamless experience for users. Additionally, the separation of planes should be respected to optimize both for the human experience and machine efficiency.
 
 \let\cleardoublepage\clearpage
 \chapter{Data Product Design \& Implementation}
