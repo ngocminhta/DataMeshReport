@@ -571,13 +571,40 @@ In conclusion, there is no single entity such as a platform but rather a set of 
 
 \let\cleardoublepage\clearpage
 \chapter{Data Product Design \& Implementation}
-\section{Data Product Canvas}
-Emphasis the importance of data product in data mesh
+\section{What is Data Product and Its Canvas}
+Data product is a core component in data mesh architecture. Conceptually, a mesh is a graph, or network, composed of nodes and connecting edges. Each node in a data mesh is referred to as a data product. Every data product resides within a confined context, and a single bounded context may contain multiple data products.
+
+Data product can be everything that has value for consumers (e.g., a database table, raw unstructured files, dashboard, data stream, etc.). It contains all data, code, and interfaces to serve analytical data needs. Data product connects to sources, such as operational systems or other data products and perform data transformation. It serves data sets in one or many output ports. \cite{datameshweb}
+
+\begin{figure}[h]
+	\vspace*{-.3cm}
+	\begin{framed}
+		\centering
+		\includegraphics[width=10.5cm]{boring.jpg}
+		\caption{Data Product Simple Canvas}
+		\label{DPCanvas}
+	\end{framed}
+\end{figure}
+
+A Data Product Canvas is a visual framework that guides a team through the data product specification. In total, the canvas consists of ten building blocks:
+	\begin{itemize}[nosep]
+		\item \textbf{Domain:} Data products should belong to one domain team, with accountability, requirements, questions, and fixes.
+		\item \textbf{Data Product Name:} This should follow a common naming strategy.
+		\item \textbf{Consumer and Use Case:} Data product design follows "Product Thinking" to identify consumer needs.
+		\item \textbf{Output Port:} Output ports define the format and consumption protocol for data.
+		\item \textbf{Metadata:} This includes data product ownership, schema, semantics, security.
+		\item \textbf{Input Ports:} Input ports define data format and protocol for reading.
+		\item \textbf{Data Product Design:} Design a data product on a conceptual level by specifying data ingestion, storage, transport, etc.
+		\item \textbf{Observability:} This includes quality, operational metrics, and service level objectives to build trustworthiness in data products.
+		\item \textbf{Ubiquitous Language:} Common language shared for operational systems and data products.
+		\item \textbf{Classification:} Classifying data as source-aligned, aggregated, or consumer-aligned.
+	\end{itemize}
+
 
 \section{Design a Data Product by Affordances}
 Data mesh is a distributed scale-out architecture that designs data products as self-contained, autonomous, and coequal nodes, providing users and developers with the capabilities they need to do their job: discover, understand, use, build, govern, and debug.
 
-Fundamentals of Software Architecture defines the constituents of architecture as: Structure, Characteristics, Decisions, Principles. In addition to these, we introduce and focus on another element: affordances - one of the five fundamental principles of interactions \cite{norman2002design}. Hence, this approach to the design of data product architecture design by affordances.
+In addition to four common constituents of architecture\footnote{Structure, Characteristics, Decisions, Principles}, we introduce and focus on designing a data product by another element: affordances \cite{norman2002design}.
 
 Table \ref{tab:affordances} lists affordances for a data product to autonomously transform and serve meaningful, understandable, trustworthy data that can be connected to other data in the ecosystem. It has all the structural components to do its job, and its dependencies to other data products or platform services are through APIs with explicit contracts, creating loose coupling.
 
@@ -600,7 +627,7 @@ Table \ref{tab:affordances} lists affordances for a data product to autonomously
 	\endlastfoot
 	
 	
-	Serve Data & The data product shares immutable and bitemporal data, allowing users to access it for training ML models, generating reports, data analysis, and building data-intensive applications, but not for transactional and operational applications. \\
+	Serve Data & The data product shares immutable and bitemporal data, allowing users to access it for multiple purposes, but not for transactional and operational applications. \\
 	\cline{1-2}
 	Consume Data & The data product consumes data from upstream sources, but only from sources it identifies and configures through the platform, not from sources it does not identify and configure. \\
 	\cline{1-2}
@@ -877,12 +904,29 @@ Data mesh observability begins with each data product sharing its external outpu
 \let\cleardoublepage\clearpage
 %------ NOT IN THE BOOK ------
 \chapter{Data Mesh in use}
-\section{Data Mesh in combination with Data Lakehouse}
+%\section{Data Mesh in combination with Data Lakehouse}
 
 \section{Frameworks and technologies for Data Mesh}
+There are some tools for installing data mesh, such as Google Cloud Platform, Data Build Tool and Data Mesh Manager.
 
+I have created a small comparison between these tools for an easy comprehension between them.
+
+Here, for the purpose of an enterprise, I will focus on implementing data mesh using Google Cloud Platform with Apache Airflow extension.
+
+\begin{figure}[h]
+	\begin{framed}
+		\centering
+		\includegraphics[width=10cm]{GCPDataMesh.png}
+		\caption{Google Cloud Platform supports for data mesh}
+		\label{GCPDataMesh}
+	\end{framed}
+\end{figure}
+
+% check in Zalo and refs folder.
 \section{Case study and Demo}
+\subsection{Data contracts in Paypal Inc.}
 
+\subsection{Data products in Daff Inc.}
 
 \begingroup
 \backmatter

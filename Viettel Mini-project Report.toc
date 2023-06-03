@@ -29,21 +29,22 @@
 \contentsline {subsection}{\numberline {2.3.1}The Logical Architecture}{9}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}The Multiplane Data Platform Architecture}{11}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Data Product Design \& Implementation}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Data Product Canvas}{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Design a Data Product by Affordances}{18}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Consuming, Transforming \& Serving Data}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Serve data}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Consume Data}{20}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Transform Data}{21}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Discovering, Understanding \& Composing Data}{22}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Discover, Understand, Trust, and Explore}{22}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Compose Data}{23}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Managing, Governing \& Observing Data}{24}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Manage the Life Cycle}{24}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Govern Data}{24}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Observe, Debug, and Audit}{25}{subsection.3.5.3}%
-\contentsline {chapter}{\numberline {4}Data Mesh in use}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Data Mesh in combination with Data Lakehouse}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Frameworks and technologies for Data Mesh}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Case study and Demo}{27}{section.4.3}%
-\contentsline {chapter}{References}{a}{section.4.3}%
+\contentsline {section}{\numberline {3.1}What is Data Product and Its Canvas}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Design a Data Product by Affordances}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Consuming, Transforming \& Serving Data}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Serve data}{20}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Consume Data}{21}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Transform Data}{22}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Discovering, Understanding \& Composing Data}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Discover, Understand, Trust, and Explore}{23}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Compose Data}{24}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Managing, Governing \& Observing Data}{25}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Manage the Life Cycle}{25}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Govern Data}{25}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Observe, Debug, and Audit}{26}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Data Mesh in use}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Frameworks and technologies for Data Mesh}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Case study and Demo}{29}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Data contracts in Paypal Inc.}{29}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Data products in Daff Inc.}{29}{subsection.4.2.2}%
+\contentsline {chapter}{References}{a}{subsection.4.2.2}%

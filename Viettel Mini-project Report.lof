@@ -23,11 +23,13 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Example of data infrastructure plane to support data product delivery\relax }}{16}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Example of ML model development journey\relax }}{17}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Data product’s high-level components to design serve data\relax }}{20}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Data product’s design to consume data\relax }}{21}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces High-level components to design transformation for data products\relax }}{22}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A data product sidecar provides a unified model of discoverability for all data products\relax }}{23}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Data product’s high-level components to design data composability\relax }}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces High-level interactions to manage the life cycle of a data product\relax }}{25}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces High-level design of embedded policies as code\relax }}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Data Product Simple Canvas\relax }}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Data product’s high-level components to design serve data\relax }}{21}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Data product’s design to consume data\relax }}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces High-level components to design transformation for data products\relax }}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A data product sidecar provides a unified model of discoverability for all data products\relax }}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Data product’s high-level components to design data composability\relax }}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces High-level interactions to manage the life cycle of a data product\relax }}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces High-level design of embedded policies as code\relax }}{27}{figure.caption.21}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Google Cloud Platform supports for data mesh\relax }}{28}{figure.caption.22}%
