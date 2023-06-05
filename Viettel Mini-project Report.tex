@@ -938,6 +938,10 @@ I have created a small comparison between these tools for an easy comprehension 
 
 Here, for the purpose of an enterprise, I will focus on implementing data mesh using Google Cloud Platform with supports from Apache Kafka, PostgreSQL, and Apache Airflow extension.
 
+\textbf{Dataplex} is a tool that enables us to manage assets at scale and define data domains within lakes and zones virtually layered over the actual physical location of the asset. \textbf{BigQuery} is a data processing ecosystem that allows us to process terabyte- to petabyte-scale datasets in seconds. It also provides direct access to data residing in \textbf{GCS Buckets}.
+
+Google Cloud enables business users to create insights on the fly with self-service analytics using familiar tools such as SQL or BI. The flexible, on-demand compute power of BigQuery means that ad hoc analysis does not compete with scheduled reporting. We can focus valuable engineering bandwidth on developing data into strategic assets for our organization, in turn allowing our business users to focus on generating business value from this data. Figure \ref{GCPDataMesh} is one example of how Google Cloud might offer a serverless and integrated analytics architecture.
+
 \begin{figure}[h]
 	\begin{framed}
 		\centering
@@ -947,8 +951,26 @@ Here, for the purpose of an enterprise, I will focus on implementing data mesh u
 	\end{framed}
 \end{figure}
 
+Google Cloud allows organizations to use different execution engines optimized for different workloads and personas to run on top of the same data tiers. This is possible because of the complete separation of compute and storage on Google Cloud. Users can access data at their level of data access including SQL, Python, or more GUI-based methods. Google Cloud’s Data Catalog, along with Dataproc Metastore and the BigQuery Metastore, allow for accessing data wherever it is located with any query engine. The process is simple: onboard the data asset in a Dataplex lake, which triggers discovery and publishes the data in BigQuery and \textbf{Dataproc} Metastore. Tools such as Vertex AI notebooks, Spark running on Dataproc, BigQuery, or Serverless Spark can then be easily integrated into the workflow. With BigQuery and Serverless Spark, data engineers can spend all their time on the code and logic. They do not need to manage clusters or tune infrastructure. They submit SQL or PySpark jobs from their interface of choice and processing is auto-scaled to match the needs of the job.
 
+Dataplex is a managed service that enables enterprises to group data containers from across their Google Cloud deployment and organize them in a hierarchy. It provides a single pane of glass to organize, govern, and index data in the Data Mesh. With Dataplex, you can curate, catalog, secure, integrate, and explore any type of data at any scale with an integrated experience. Dataplex enables quickly built lakes without needing to acquire and worry about different resources. It expands automatic data discovery and schema inference across different systems so that once you add a resource to Dataplex, it can be represented in the Data Mesh .
 
+Dataplex enhances this process by automatically registering metadata as tables and filesets as metastores and Data Catalog. Additionally, it tightly integrates with our Cloud Data Loss Prevention API (DLP) and includes built-in data quality checks, making it easier to tag sensitive data. With Dataplex, implementing a Data Mesh with simplified security controls becomes possible, as shown in Figure \ref{Dataplex}. It provides consistent security policies and enforcement for Cloud Storage and BigQuery, enabling central governance teams to audit the environment. Moreover, it offers managed Data Lake Storage with precise access control, ACID transactions on files, and a unified interface for managing BigQuery.
+
+\begin{figure}[h]
+	\begin{framed}
+		\centering
+		\includegraphics[width=10cm]{Dataplex.png}
+		\caption{Single pane of glass - Dataplex}
+		\label{Dataplex}
+	\end{framed}
+\end{figure}
+
+Data ownership and governance are crucial for the success of Data Mesh, and integrating governance with federated data sources is essential. Dataplex provides a data management and governance layer that allows you to efficiently organize your data across BigQuery and Cloud Storage while enforcing centralized governance rules. This empowers data administrators to establish and manage workspaces along with appropriate environment profiles, including compute parameters and libraries. They can also control user access and manage costs through a unified interface.
+
+Dataplex simplifies access to notebooks for data scientists, offering one-click access and enabling them to discover notebooks through a repository linked to associated data. They can easily save and share notebooks as if they were sharing any other asset within the organization. Data analysts can leverage SQL Workspace for ad hoc analysis, eliminating the need for reliance on specific data processing environments. They can seamlessly use Presto, Hive, or BigQuery through a single interface, without the need to access multiple environments.
+
+In addition, data access is made easy and uncomplicated. Google Cloud offers an integrated experience across all its data analytics services, providing virtual Lakehouse experiences. This is enhanced by a serverless notebook experience with serverless Spark, specifically designed for data science. All data stored in Cloud Storage is automatically made accessible for querying through OSS tools and BigQuery. Additionally, Data Catalog enables search and discovery capabilities across the entire data landscape.
 % check in Zalo and refs folder.
 \section{Case study and Demo}
 \subsection{Data contracts in Paypal Inc.}

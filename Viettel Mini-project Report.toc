@@ -6,8 +6,8 @@
 \contentsline {chapter}{Preface}{iii}{Doc-Start}%
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{List of Figures}{vii}{Doc-Start}%
-\contentsline {chapter}{List of Tables}{viii}{Doc-Start}%
+\contentsline {chapter}{List of Figures}{viii}{Doc-Start}%
+\contentsline {chapter}{List of Tables}{ix}{Doc-Start}%
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Problems and Initial Approach}{1}{chapter.1}%
@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {3.5.3}Observe, Debug, and Audit}{25}{subsection.3.5.3}%
 \contentsline {chapter}{\numberline {4}Data Mesh in use}{28}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Frameworks and technologies for Data Mesh}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Case study and Demo}{28}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Data contracts in Paypal Inc.}{28}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Data products in Daff Inc.}{28}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.2}Case study and Demo}{31}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Data contracts in Paypal Inc.}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Data products in Daff Inc.}{31}{subsection.4.2.2}%
 \contentsline {chapter}{References}{a}{subsection.4.2.2}%
