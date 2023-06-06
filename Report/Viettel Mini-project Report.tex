@@ -982,9 +982,16 @@ Dataplex simplifies access to notebooks for data scientists, offering one-click 
 In addition, data access is made easy and uncomplicated. Google Cloud offers an integrated experience across all its data analytics services, providing virtual Lakehouse experiences. This is enhanced by a serverless notebook experience with serverless Spark, specifically designed for data science. All data stored in Cloud Storage is automatically made accessible for querying through OSS tools and BigQuery. Additionally, Data Catalog enables search and discovery capabilities across the entire data landscape.
 % check in Zalo and refs folder.
 \section{Case study and Demo}
-\subsection{Data contracts in Paypal Inc.}
+\subsection{Data contracts in PayPal Inc.}
+As we can see in the figure \ref{datacontract}, data contract includes six main components. In PayPal Holdings Inc., they have built their own data contract that have published the example and template based on YAML data contract. There are eight main sections in the contract, including a catch-all section. The pricing part is a surprising addition.
 
-\subsection{Data products in Daff Inc.}
+This contract encompasses a dataset containing multiple tables, each with various details at the table and column levels. Data engineers can establish data quality (DQ) rules at different levels, which are not tied to any specific tool. They have the option to use either their own custom DQ tool or tools like Great Expectations. The pricing aspect of this version is still experimental.
+
+Stakeholders have an important role in building trust in a particular data product. The contract provides information about the stakeholders and their project history. While tribal knowledge may still exist, the contract helps track its evolution.
+
+I have reconstructed PayPal's data contract and uploaded it in my Github repository \href{https://github.com/ngocminhta/DataMeshReport/tree/main/DataContractPayPal.md}{\underline{here}}.
+
+\subsection{Data mesh demo on Google Cloud Platform}
 
 \begingroup
 \backmatter

@@ -45,6 +45,6 @@
 \contentsline {chapter}{\numberline {4}Data Mesh in use}{28}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Frameworks and technologies for Data Mesh}{28}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Case study and Demo}{31}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Data contracts in Paypal Inc.}{31}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Data products in Daff Inc.}{31}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.1}Data contracts in PayPal Inc.}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Data mesh demo on Google Cloud Platform}{31}{subsection.4.2.2}%
 \contentsline {chapter}{References}{a}{subsection.4.2.2}%
