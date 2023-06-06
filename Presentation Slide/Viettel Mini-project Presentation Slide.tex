@@ -1,0 +1,159 @@
+% !TeX spellcheck = en_US
+\documentclass[aspectratio=169]{beamer}
+\hypersetup{pdfpagemode=FullScreen}
+
+\mode<presentation>{
+\usetheme{Szeged}
+\setbeamercovered{transparent}
+\usecolortheme{lsc}
+}
+
+\mode<handout>{
+  % tema simples para ser impresso
+  \usepackage[bar]{beamerthemetree}
+  % Colocando um fundo cinza quando for gerar transparências para serem impressas
+  % mais de uma transparência por página
+  \beamertemplatesolidbackgroundcolor{black!5}
+}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\usepackage{fontawesome5}
+\usepackage{amsmath,amssymb}
+\usepackage[english]{varioref}
+\usepackage[english,brazil,vietnamese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{tgheros}
+%\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usefonttheme[onlymath]{serif}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{textpos}
+\usepackage[superscript,biblabel]{cite}
+
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{enumerate items}[default]
+\setbeamercovered{invisible}
+%\beamertemplatetransparentcovereddynamic
+
+\title[\textbf{Data Mesh Architecture}]{\textbf{Data Mesh Architecture}}
+\author[\textbf{Supervisor: Mr. Nguyễn Chí Thanh}]{
+	{\footnotesize Tạ Ngọc Minh - Sophomore in Data Science \& AI @ HUST}}
+
+\institute[($\bullet$'v'$\bullet$) \textit{Viettel Digital Talent 2023 - Show us your way!} ($\bullet$'v'$\bullet$)]{\small \textbf{Mini-project Report}}
+
+% Se comentar a linha abaixo, irá aparecer a data quando foi compilada a apresentação  
+\date{{\scriptsize Data Engineering Specialization \\ Supervisor: Mr. \textbf{Nguyễn Chí Thanh}}}
+
+\pgfdeclareimage[height=0.55cm]{inf}{figs/viettel-white.png}
+
+% pode-se colocar o LOGO assim
+%\logo{\pgfuseimage{inf}}
+\titlegraphic{
+	\includegraphics[width=4.5cm]{figs/viettel2.png}
+}
+
+\addtobeamertemplate{frametitle}{}{%
+	\begin{textblock*}{100mm}(.9\textwidth,-.65cm)
+		\includegraphics[height=0.4cm]{figs/viettel-white.png}
+	\end{textblock*}}
+
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\textbf{\textit{* Read my full report \href{https://tinyurl.com/136462-Group1}{\underline{here}} to get further information}}
+	\hspace{10.2cm}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+\selectlanguage{english}
+\AtBeginSection[]{
+  \begin{frame}<beamer>
+    \frametitle{\textbf{Contents}}
+    \textbf{\tableofcontents[currentsection,currentsubsection]}
+  \end{frame}
+}
+
+\begin{document}
+
+{
+	\usebackgroundtemplate{\includegraphics[width=\paperwidth]{figs/viettel.png}}
+	\begin{frame}
+	\titlepage
+	\end{frame}
+}
+
+\begin{frame}
+\frametitle{\textbf{Contents}}
+	\begin{columns}
+		\column{8cm}
+		\textbf{\tableofcontents}
+		\vspace{.5cm}
+		For further information about our project, please scan the QR code on the screen:
+		
+		\column{4cm}
+		\includegraphics[width=4cm]{figs/QR}
+	\end{columns}
+\end{frame}
+
+
+\section[Problem]{Setting up problem}
+\frame{
+    \frametitle{\textbf{The real-life problem}}
+	\begin{block}{}
+		Let's imagine that we have to send many packages to several cities domestically and internationally.
+	\end{block}
+	\pause
+	Algorithmically, we need to solve two problems simultaneously (Traveling Salesman Problem and Bin Packing Problem). In particular:
+	\pause
+    \begin{itemize}
+    	\item \textbf{State:} Any route of the ship and any numbers of used containers.
+    	\pause
+    	\item \textbf{Action:} Rearrange the packages from this container to another, and change the route of the ship.
+    	\pause
+    	\item \textbf{Goal:} Find the shortest route and the least number of used containers.
+    	\pause
+    	\item \textbf{Path cost:} Length of the route and number of containers.
+    \end{itemize}
+}
+
+\section*{Acknowledgments}
+\frame{
+	\frametitle{\textbf{Acknowledgments}}
+	\begin{itemize}
+		\item This work is supported and supervised by Mr. Nguyen Chi Thanh under the training program of Viettel Digital Talent 2023, Software \& Data Engineering sector.
+		\item Also, my research and project is partially supported by other mentors of the program, other professors and students at School of Information and Communication Technology, Hanoi University of Science and Technology.
+	\end{itemize}
+}
+
+\section*{References}
+\begin{frame}[allowframebreaks]
+	\frametitle{\textbf{References}}
+	\bibliographystyle{amsalpha}
+	{\scriptsize \begin{thebibliography}{000}
+		\bibitem{b1} T. Back, U. Hammel and H. . -P. Schwefel, "Evolutionary computation: comments on the history and current state," in IEEE Transactions on Evolutionary Computation, vol. 1, no. 1, pp. 3-17, April 1997, doi: 10.1109/4235.585888.
+		\bibitem{b2} J. Yin, A. Zhu, Z. Zhu, Y. Yu and X. Ma, "Multifactorial Evolutionary Algorithm Enhanced with Cross-task Search Direction," 2019 IEEE Congress on Evolutionary Computation (CEC), 2019, pp. 2244-2251, doi: 10.1109/CEC.2019.8789959.
+	\end{thebibliography}}
+\end{frame}
+
+\section*{End}
+{
+	\usebackgroundtemplate{\includegraphics[width=\paperwidth]{figs/viettel.png}}
+	\begin{frame}
+		\titlepage
+		\begin{center}
+			\textbf{($\bullet$'v'$\bullet$) Thank you for your attention! ($\bullet$'v'$\bullet$)}
+		\end{center}
+	\end{frame}
+}
+
+\end{document}
