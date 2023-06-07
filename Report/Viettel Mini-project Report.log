@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.2)  7 JUN 2023 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.2)  7 JUN 2023 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1940,7 +1940,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 1.
-<CentralDataTeam.jpg, id=235, 813.0375pt x 324.21124pt>
+<CentralDataTeam.jpg, id=237, 813.0375pt x 324.21124pt>
 File: CentralDataTeam.jpg Graphic file (type jpg)
 <use CentralDataTeam.jpg>
 Package pdftex.def Info: CentralDataTeam.jpg  used on input line 110.
@@ -1963,7 +1963,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 1
 (C:\Users\tango\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<CulturalShift.png, id=248, 1891.065pt x 683.55376pt>
+<CulturalShift.png, id=250, 1891.065pt x 683.55376pt>
 File: CulturalShift.png Graphic file (type png)
 <use CulturalShift.png>
 Package pdftex.def Info: CulturalShift.png  used on input line 148.
@@ -1982,7 +1982,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./CulturalShift.png>]
-<OrgChanges.png, id=257, 126.2316pt x 192.72pt>
+<OrgChanges.png, id=259, 126.2316pt x 192.72pt>
 File: OrgChanges.png Graphic file (type png)
 <use OrgChanges.png>
 Package pdftex.def Info: OrgChanges.png  used on input line 162.
@@ -2010,7 +2010,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 177.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 177.
-<DecomposeData.png, id=267, 754.82pt x 579.16376pt>
+<DecomposeData.png, id=269, 754.82pt x 579.16376pt>
 File: DecomposeData.png Graphic file (type png)
 <use DecomposeData.png>
 Package pdftex.def Info: DecomposeData.png  used on input line 189.
@@ -2029,7 +2029,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4
 
 ]
-<dautnivs.png, id=275, 662.475pt x 578.91281pt>
+<dautnivs.png, id=277, 662.475pt x 578.91281pt>
 File: dautnivs.png Graphic file (type png)
 <use dautnivs.png>
 Package pdftex.def Info: dautnivs.png  used on input line 209.
@@ -2047,7 +2047,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5 <./DecomposeData.png>]
-<datacontract.png, id=290, 1306.8825pt x 603.0028pt>
+<datacontract.png, id=292, 1306.8825pt x 603.0028pt>
 File: datacontract.png Graphic file (type png)
 <use datacontract.png>
 Package pdftex.def Info: datacontract.png  used on input line 234.
@@ -2071,12 +2071,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
-<DataGov.png, id=303, 706.89093pt x 505.13719pt>
+<DataGov.png, id=305, 706.89093pt x 505.13719pt>
 File: DataGov.png Graphic file (type png)
 <use DataGov.png>
 Package pdftex.def Info: DataGov.png  used on input line 284.
 (pdftex.def)             Requested size: 341.43306pt x 243.98923pt.
-<CorPrinciples.png, id=305, 1367.1075pt x 668.4975pt>
+<CorPrinciples.png, id=307, 1367.1075pt x 668.4975pt>
 File: CorPrinciples.png Graphic file (type png)
 <use CorPrinciples.png>
 Package pdftex.def Info: CorPrinciples.png  used on input line 297.
@@ -2137,7 +2137,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [9 <./CorPrinciples.png>]
-<LogicalArchitecture.png, id=320, 1067.48813pt x 503.8825pt>
+<LogicalArchitecture.png, id=322, 1067.48813pt x 503.8825pt>
 File: LogicalArchitecture.png Graphic file (type png)
 <use LogicalArchitecture.png>
 Package pdftex.def Info: LogicalArchitecture.png  used on input line 363.
@@ -2216,7 +2216,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10 <./LogicalArchitecture.png>]
-<LogicalComponents.png, id=328, 739.76375pt x 490.83376pt>
+<LogicalComponents.png, id=330, 739.76375pt x 490.83376pt>
 File: LogicalComponents.png Graphic file (type png)
 <use LogicalComponents.png>
 Package pdftex.def Info: LogicalComponents.png  used on input line 432.
@@ -2225,7 +2225,7 @@ Package pdftex.def Info: LogicalComponents.png  used on input line 432.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<multiplane.png, id=331, 745.78625pt x 638.385pt>
+<multiplane.png, id=333, 745.78625pt x 638.385pt>
 File: multiplane.png Graphic file (type png)
 <use multiplane.png>
 Package pdftex.def Info: multiplane.png  used on input line 447.
@@ -2239,7 +2239,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [11]
-<DataProductDevJourney.png, id=337, 629.35126pt x 309.65688pt>
+<DataProductDevJourney.png, id=339, 629.35126pt x 309.65688pt>
 File: DataProductDevJourney.png Graphic file (type png)
 <use DataProductDevJourney.png>
 Package pdftex.def Info: DataProductDevJourney.png  used on input line 460.
@@ -2505,7 +2505,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-<DataInfras.png, id=365, 563.10374pt x 560.8453pt>
+<DataInfras.png, id=367, 563.10374pt x 560.8453pt>
 File: DataInfras.png Graphic file (type png)
 <use DataInfras.png>
 Package pdftex.def Info: DataInfras.png  used on input line 550.
@@ -2520,7 +2520,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15 <./DataInfras.png>]
-<MLJourney.png, id=374, 523.9575pt x 550.30594pt>
+<MLJourney.png, id=376, 523.9575pt x 550.30594pt>
 File: MLJourney.png Graphic file (type png)
 <use MLJourney.png>
 Package pdftex.def Info: MLJourney.png  used on input line 603.
@@ -2536,7 +2536,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16 <./MLJourney.png>]
 Chapter 3.
-<boring.jpg, id=382, 602.25pt x 401.24907pt>
+<boring.jpg, id=384, 602.25pt x 401.24907pt>
 File: boring.jpg Graphic file (type jpg)
 <use boring.jpg>
 Package pdftex.def Info: boring.jpg  used on input line 622.
@@ -2585,7 +2585,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [19]
-<ServeData.png, id=400, 678.28406pt x 409.53pt>
+<ServeData.png, id=402, 678.28406pt x 409.53pt>
 File: ServeData.png Graphic file (type png)
 <use ServeData.png>
 Package pdftex.def Info: ServeData.png  used on input line 734.
@@ -2619,7 +2619,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [20 <./ServeData.png>]
-<ConsumeData.png, id=406, 679.03688pt x 478.03593pt>
+<ConsumeData.png, id=408, 679.03688pt x 478.03593pt>
 File: ConsumeData.png Graphic file (type png)
 <use ConsumeData.png>
 Package pdftex.def Info: ConsumeData.png  used on input line 780.
@@ -2654,7 +2654,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [21 <./ConsumeData.png>]
-<DiscoverData.png, id=413, 609.02531pt x 550.30594pt>
+<DiscoverData.png, id=415, 609.02531pt x 550.30594pt>
 File: DiscoverData.png Graphic file (type png)
 <use DiscoverData.png>
 Package pdftex.def Info: DiscoverData.png  used on input line 840.
@@ -2663,7 +2663,7 @@ Package pdftex.def Info: DiscoverData.png  used on input line 840.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ComposeData.png, id=414, 706.13812pt x 599.23875pt>
+<ComposeData.png, id=416, 706.13812pt x 599.23875pt>
 File: ComposeData.png Graphic file (type png)
 <use ComposeData.png>
 Package pdftex.def Info: ComposeData.png  used on input line 854.
@@ -2680,7 +2680,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [22]
-<ManageLifeCycle.png, id=424, 666.99188pt x 508.14844pt>
+<ManageLifeCycle.png, id=426, 666.99188pt x 508.14844pt>
 File: ManageLifeCycle.png Graphic file (type png)
 <use ManageLifeCycle.png>
 Package pdftex.def Info: ManageLifeCycle.png  used on input line 868.
@@ -2704,7 +2704,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [23 <./DiscoverData.png>]
-<GovernData.png, id=430, 704.6325pt x 505.89pt>
+<GovernData.png, id=432, 704.6325pt x 505.89pt>
 File: GovernData.png Graphic file (type png)
 <use GovernData.png>
 Package pdftex.def Info: GovernData.png  used on input line 912.
@@ -2807,7 +2807,7 @@ Underfull \hbox (badness 7433) in paragraph at lines 971--971
 \T1/ppl/m/n/12 man-ages their own dbt
  []
 
-<DataMeshGCP.png, id=445, 414.5889pt x 249.3315pt>
+<DataMeshGCP.png, id=447, 414.5889pt x 249.3315pt>
 File: DataMeshGCP.png Graphic file (type png)
 <use DataMeshGCP.png>
 Package pdftex.def Info: DataMeshGCP.png  used on input line 978.
@@ -2826,7 +2826,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [26
 
 ]
-<GCPDataMesh.png, id=451, 442.65375pt x 400.49625pt>
+<GCPDataMesh.png, id=455, 442.65375pt x 400.49625pt>
 File: GCPDataMesh.png Graphic file (type png)
 <use GCPDataMesh.png>
 Package pdftex.def Info: GCPDataMesh.png  used on input line 991.
@@ -2841,7 +2841,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [27 <./DataMeshGCP.png> <./GCPDataMesh.png>]
-<Dataplex.png, id=460, 750.55406pt x 560.8453pt>
+<Dataplex.png, id=464, 750.55406pt x 560.8453pt>
 File: Dataplex.png Graphic file (type png)
 <use Dataplex.png>
 Package pdftex.def Info: Dataplex.png  used on input line 1006.
@@ -2856,12 +2856,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [28 <./Dataplex.png>]
-<datacontractPayPal.png, id=467, 1197.273pt x 540.8205pt>
+<datacontractPayPal.png, id=471, 1197.273pt x 540.8205pt>
 File: datacontractPayPal.png Graphic file (type png)
 <use datacontractPayPal.png>
 Package pdftex.def Info: datacontractPayPal.png  used on input line 1025.
 (pdftex.def)             Requested size: 284.52756pt x 128.52046pt.
-<DataMeshManagerDemo.png, id=470, 558.58687pt x 505.13719pt>
+<DataMeshManagerDemo.png, id=474, 558.58687pt x 505.13719pt>
 File: DataMeshManagerDemo.png Graphic file (type png)
 <use DataMeshManagerDemo.png>
 Package pdftex.def Info: DataMeshManagerDemo.png  used on input line 1043.
@@ -2921,8 +2921,8 @@ AED: lastpage setting LastPage
 ### bottom level 
 Here is how much of TeX's memory you used:
  36758 strings out of 475385
- 689063 string characters out of 2776908
- 1160846 words of memory out of 3000000
+ 689065 string characters out of 2776908
+ 1160875 words of memory out of 3000000
  57241 multiletter control sequences out of 15000+600000
  568975 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2937,9 +2937,9 @@ tino/uplb8a.pfb><C:/Users/tango/AppData/Local/Programs/MiKTeX/fonts/type1/vntex
 vntex/urwvn/uplr8v.pfb><C:/Users/tango/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/palatino/uplri8a.pfb><C:/Users/tango/AppData/Local/Programs/MiKTeX/fonts/
 type1/vntex/urwvn/uplri8v.pfb>
-Output written on "Viettel Mini-project Report.pdf" (42 pages, 7403612 bytes).
+Output written on "Viettel Mini-project Report.pdf" (42 pages, 7404508 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
+ 717 PDF objects out of 1000 (max. 8388607)
  140 named destinations out of 1000 (max. 500000)
- 596 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 588 words of extra memory for PDF output out of 10000 (max. 10000000)
 

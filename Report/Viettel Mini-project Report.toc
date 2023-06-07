@@ -49,5 +49,4 @@
 \contentsline {subsection}{\numberline {4.2.1}Data contracts in PayPal Inc.}{29}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Data mesh demo on Data Mesh Manager}{29}{subsection.4.2.2}%
 \contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{31}{section.5.1}%
-\contentsline {chapter}{References}{a}{section.5.1}%
+\contentsline {chapter}{References}{a}{chapter.5}%

@@ -91,4 +91,9 @@ Z.~Dehghani, ``Why data mesh?'' in \emph{Data Mesh: Delivering Data-Driven
 D.~A. Norman, \emph{The Design of Everyday Things}.\hskip 1em plus 0.5em minus
   0.4em\relax Basic Books, 2002.
 
+\bibitem{gcloud}
+T.~Firat, H.~Thinh, P.~Johan, C.~Victor, and P.~Susan, \emph{Build a modern,
+  distributed Data Mesh with Google Cloud}.\hskip 1em plus 0.5em minus
+  0.4em\relax Google Cloud, 2022.
+
 \end{thebibliography}
