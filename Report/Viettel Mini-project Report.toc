@@ -3,11 +3,12 @@
 \babel@toc {english}{}\relax 
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Preface}{iii}{Doc-Start}%
+\contentsline {chapter}{Preface}{iii}{section*.1}%
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{List of Figures}{viii}{Doc-Start}%
-\contentsline {chapter}{List of Tables}{ix}{Doc-Start}%
+\contentsline {chapter}{Table of Contents}{vi}{section*.2}%
+\contentsline {chapter}{List of Figures}{viii}{section*.3}%
+\contentsline {chapter}{List of Tables}{ix}{section*.4}%
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Problems and Initial Approach}{1}{chapter.1}%
@@ -45,8 +46,9 @@
 \contentsline {subsection}{\numberline {3.5.3}Observe, Debug, and Audit}{24}{subsection.3.5.3}%
 \contentsline {chapter}{\numberline {4}Data Mesh in use}{26}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Frameworks and technologies for Data Mesh}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Case study and Demo}{29}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Data contracts in PayPal Inc.}{29}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}Case study and Demo}{28}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Data contracts in PayPal Inc.}{28}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Data mesh concept demo on Data Mesh Manager}{29}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Data mesh demo on Google Cloud Platform}{29}{subsection.4.2.3}%
 \contentsline {chapter}{\numberline {5}Conclusion}{30}{chapter.5}%
 \contentsline {chapter}{References}{a}{chapter.5}%

@@ -55,15 +55,19 @@
     %\hrule width0.3\textwidth
     \begingroup
     \normalsize
+    
+
 \chapter*{Preface}
+\phantomsection
 \addcontentsline{toc}{chapter}{Preface}
+
 \justifying
 \selectlanguage{vietnamese}
 Dear the board of directors of Viettel Group, the mentors, and all of my friends,
 
 This document is a part of my research mini-project as a data engineer intern for the first period of Viettel Digital Talent 2023 Program. The completion of this research report does not mean the end of my duties as learners. In fact, this report is a first step towards consistently studying what I have reviewed and written here.
 
-Data has grown up so quickly recently. The term 'big data' has become familiar with every tech-lovers is the clearest evidence of the explosion of data. This leads to many requirements of upgrading the current system and management, along with finding new architecture to store, process and analyze data. Once the central data lake has been overloaded, we need to design a decentralized architecture. This report is written under the research about the Data Mesh architecture, a new design that was first defined by Zhamak Dehghani in 2019.
+Data has grown up so quickly recently. The term 'big data' has become familiar with every tech-lovers is the clearest evidence of the explosion of data. This leads to many requirements of upgrading the current system and management, along with finding new architecture to store, process and analyze data. Once the central data lake has been overloaded, we need to design a decentralized architecture. This report is written under the research about the Data Mesh architecture, a new design that was first defined by Zhamak Dehghani in 2019. In this report, I will show you the outstanding points of data mesh, along with the shifts that it may cause. Also, I will introduce about the designs of data mesh, and its main components - data product. Some tools and platforms are also introduced along with some demos, which may help you have a clearer insight of data mesh architecture.
 
 To write this document, I would like to give many thanks to Viettel Group, and Viettel Digital Talent program for giving me chance to do my research. I want to send a big thanks to Mr. Nguyễn Chí Thanh, and all the mentors of the first period of the program, who gave me many useful lectures and guidance. Also, I want to say thanks to professor Huỳnh Thị Thanh Bình, professor Đỗ Tuấn Anh for their initial supports, and many other professors at the International Research Center for AI and the School of Information and Communication Technology, Hanoi University of Science and Technology about their public documents about data engineering. Last, I would like to say thanks to all of my friends, who always read my documents, comment about them and support me whenever I need.
 
@@ -74,17 +78,27 @@ Thank you for reading this report and looking forward to getting many comments f
 
 \raggedleft
 \textbf{Ngoc-Minh Ta}\\
+\textit{Sophomore in Data Science \& AI @ HUST-SoICT} \\
 \textit{Viettel Digital Talent Residency 2023}
 
 \justifying
 \selectlanguage{english}
 
         \tableofcontents
+        \phantomsection
+        \addcontentsline{toc}{chapter}{Table of Contents}
+        
         \listoffigures
+        \phantomsection
         \addcontentsline{toc}{chapter}{List of Figures}
+        
         \let\cleardoublepage\clearpage
+        
         \listoftables
+        \phantomsection
         \addcontentsline{toc}{chapter}{List of Tables}
+        
+        
         \let\cleardoublepage\clearpage
     \endgroup
     
@@ -104,7 +118,7 @@ Thank you for reading this report and looking forward to getting many comments f
 \subsection{A problem from history}
 Many organizations have invested in building a central data lake. To make data-driven business, there is a central data administration team take the responsibility for this.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=14cm]{CentralDataTeam.jpg}
@@ -142,7 +156,7 @@ The term data mesh was first stated by Zhamak Dehghani in 2019 and is based on f
 \subsection{What will changes after data mesh?}
 Data mesh is a fresh method for business intelligence, data analysis and management that is based on an distributed architecture. Along with that, data lake and data warehouse do not disappear, they just become nodes in the mesh. \cite{machado2022data,shiftkpmg}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=16.5cm]{CulturalShift.png}
@@ -155,7 +169,7 @@ Data mesh ensures organizations to continue to apply some data lake principles, 
 
 It is an implementation detail sub-serving the idea of domain data product as the first-class concern. The same applies to data warehouse in terms of business reporting and visualization \cite{shiftkpmg}. It also cause a cultural shift in the organization, also, a fundamental shift in the assumptions, architecture, technical solutions, and social structure of our organizations. \cite{datamesh2022ch1}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\vspace*{-.3cm}
 	\begin{framed}
 		\centering
@@ -183,7 +197,7 @@ Domain data ownership is the foundation of scale in a complex system like enterp
 		\item Consumer-aligned (fit-for-purpose) domain data: Analytical data transformed to fit the needs of one or multiple specific use cases.
 	\end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=12cm]{DecomposeData.png}
@@ -203,7 +217,7 @@ The shift toward domain-oriented data ownership leads to accepting and working w
 Domains are taking up extra data responsibility with data mesh. To acquire agility and authenticity, responsibility and efforts transfer from a centralized data team to domains. \cite{datamesh2022ch2}
 
 \subsection{Principle of Data as a Product}
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=11cm]{dautnivs.png}
@@ -228,7 +242,7 @@ Define these roles for each domain and allocate one or multiple people to the ro
 \subsection{Data contract}
 Data contract is an agreement between a service provider and data consumers. It is not in-depth legal documents, but a process to help data producers and data consumers get on the same page. It refers to the management and intended usage of data between different organizations to ensure reliable and high-quality data that can be trusted by all parties involved. \cite{contract}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=13cm]{datacontract.png}
@@ -278,7 +292,7 @@ The data mesh governance model consists of three complementary pillars:
 
 To bring these three pillars together, Figure \ref{DataGov} shows an example of this model.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=12cm]{DataGov.png}
@@ -291,7 +305,7 @@ Data mesh governance seeks to improve existing data governance by finding the dy
 
 \subsection{The correlations between the four principles}
 The correlations between the four principles are shown in figure \ref{CorPrinciples}.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=12cm]{CorPrinciples.png}
@@ -357,7 +371,7 @@ While the evolution of data architecture has been necessary and an improvement, 
 
 \section{Data Mesh Architecture Design}
 \subsection{The Logical Architecture}
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=11cm]{LogicalArchitecture.png}
@@ -426,7 +440,7 @@ While the evolution of data architecture has been necessary and an improvement, 
 	Control port & A data product’s standard APIs to configure policies or perform highly privileged governance operations.\\
 \end{xltabular}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10cm]{LogicalComponents.png}
@@ -441,7 +455,7 @@ It is intentionally that the technology evolves to the point that we can get the
 \subsection{The Multiplane Data Platform Architecture}
 As we have discussed previously, the multiplane data platform consists of three planes, with the interactive diagram as figure \ref{multiplane}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=12cm]{multiplane.png}
@@ -454,7 +468,7 @@ As we have discussed previously, the multiplane data platform consists of three 
 The data product experience plane provides operations on a data product and manages the complexity of provisioning its underlying infrastructure, while the infrastructure utility plane optimizes the resources' performance and utilization to get the best out of the underlying infrastructure providers. The most important idea is to understand the main journeys of platform users and evaluate how to make it easy for them to complete.
 \vspace{-.3cm}
 \subsubsection*{Data Product Developer Journey}
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10cm]{DataProductDevJourney.png}
@@ -543,7 +557,7 @@ We should go deeper to consider each stage of the platform planes and interfaces
 \vspace{-.3cm}
 The data infrastructure plane is a key enabler in lowering the cost and effort required to code or configure components of a data product. Developers interact with the data product experience plane to build, deploy, and test a single data quantum. The data product experience plane delegates the implementation of the data product components to the data infrastructure plane.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\vspace*{-.3cm}
@@ -596,7 +610,7 @@ A data consumer is a user with various skills and responsibilities, such as cons
 
 The data scientist's journey to continuously deliver an ML model as a data product follows the practice of continuous delivery for ML (CD4ML\footnote{This process is also known as MLOps; however, I use the CD4ML notation since it overlays and integrates closely with continuous delivery of software and data products.}) to continuously hypothesize, train, deploy, monitor, and improve the model in rapid feedback loops. The figure \ref{MLJourney} illustrate this journey.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\vspace*{-.3cm}
 	\begin{framed}
 		\centering
@@ -615,7 +629,7 @@ Data product is a core component in data mesh architecture. Conceptually, a mesh
 
 Data product can be everything that has value for consumers (e.g., a database table, raw unstructured files, dashboard, data stream, etc.). It contains all data, code, and interfaces to serve analytical data needs. Data product connects to sources, such as operational systems or other data products and perform data transformation. It serves data sets in one or many output ports. \cite{datameshweb}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\vspace*{-.3cm}
 	\begin{framed}
 		\centering
@@ -728,7 +742,7 @@ Data products serve domain-oriented data to diverse consumers through output dat
 	Core data semantic & Expression of the data semantic - agnostic to the modes of access or its spatial syntax. \\
 \end{xltabular}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{ServeData.png}
@@ -774,7 +788,7 @@ In most of cases, data in organizations originates from internal or external sys
 	Input port synchronizer and temporary storage & Temporary storage is necessary to keep track of observed and unprocessed data until all observations are available for processing. \\
 \end{xltabular}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{ConsumeData.png}
@@ -834,7 +848,7 @@ To satisfy the above design, we need to follow these steps:
 
 The data product sidecar is a platform-provided agent that runs within the computational context of a data quantum and is responsible for cross-cutting concerns that need to be standardized across all data products. Figure demonstrates the data product sidecar’s interactions in support of discoverability. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{DiscoverData.png}
@@ -848,7 +862,7 @@ The design considerations for a system of distributed data models that enables d
 
 The design prioritizes loose coupling between data products and minimizing centralized synchronization points. Data composability across the mesh is based on a distributed type system (schemas) where each data product owns and controls its own life cycle.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{ComposeData.png}
@@ -862,7 +876,7 @@ The design prioritizes loose coupling between data products and minimizing centr
 \subsection{Manage the Life Cycle}
 A data product's manifest is the specification of its target state, which can change and evolve during its lifetime. Developers create two groups of artifacts: source artifacts and data quantum manifest, which are used to generate the build and runtime artifacts, provision necessary resources, and run the data product container. The declarative modeling of a data product hides complexity, allowing developers to communicate various facets and properties of a data product in a standard fashion.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{ManageLifeCycle.png}
@@ -873,7 +887,7 @@ A data product's manifest is the specification of its target state, which can ch
 \end{figure}
 
 \begin{xltabular}{\textwidth}{||s|X|}
-	\caption{High-level components to transform data for a data product} \label{tab:DataManifest} \\
+	\caption{Data product manifest components} \label{tab:DataManifest} \\
 	
 	\hline \textbf{Component} & \multicolumn{1}{b|}{\textbf{Description}}\\ \hline 
 	\endfirsthead
@@ -906,7 +920,7 @@ A data product's manifest is the specification of its target state, which can ch
 \subsection{Govern Data}
 Data products are architectural components that enable configuration and execution of policies. These components include a control port, data product sidecar, and data product container. These components work in collaboration with the mesh experience plane, which provides capabilities for governance processes such as configuring policies and the right to be forgotten globally across the mesh. Governance of policies requires observability of their state of adoption, which can be domain-specific or agnostic. Successful implementation of data mesh governance requires design characteristics such as conformance to HIPAA and guaranteed data accuracy levels.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{GovernData.png}
@@ -972,7 +986,7 @@ I have created a small comparison between these tools for an easy comprehension 
 
 Here, for the purpose of an enterprise, I will focus on implementing data mesh using Google Cloud Platform with supports from Apache Kafka, PostgreSQL, and other extensions. Other tools can be find a simple description in \cite{datameshweb}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=12cm]{DataMeshGCP.png}
@@ -985,7 +999,7 @@ Here, for the purpose of an enterprise, I will focus on implementing data mesh u
 
 Google Cloud enables business users to create insights on the fly with self-service analytics using familiar tools such as SQL or BI. The flexible, on-demand compute power of BigQuery means that ad hoc analysis does not compete with scheduled reporting. We can focus valuable engineering bandwidth on developing data into strategic assets for our organization, in turn allowing our business users to focus on generating business value from this data. Figure \ref{GCPDataMesh} is one example of how Google Cloud might offer a serverless and integrated analytics architecture.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10cm]{GCPDataMesh.png}
@@ -998,16 +1012,7 @@ Google Cloud allows using different execution engines for diverse workloads and 
 
 Dataplex is a managed service that groups data containers from Google Cloud, allowing hierarchical organization. It offers a unified platform to curate, catalog, secure, integrate, and explore data at any scale. With Dataplex, you can quickly build data lakes without resource concerns. It enhances automatic data discovery and schema inference across systems, seamlessly representing resources in the Data Mesh.
 
-Dataplex enhances this process by automatically registering metadata as tables and filesets as metastores and Data Catalog. Additionally, it tightly integrates with our Cloud Data Loss Prevention API (DLP) and includes built-in data quality checks, making it easier to tag sensitive data. With Dataplex, implementing a Data Mesh with simplified security controls becomes possible, as shown in figure \ref{Dataplex}. It provides consistent security policies and enforcement for Cloud Storage and BigQuery, enabling central governance teams to audit the environment. Moreover, it offers managed Data Lake Storage with precise access control, ACID transactions on files, and a unified interface for managing BigQuery.
-
-\begin{figure}[h]
-	\begin{framed}
-		\centering
-		\includegraphics[width=10cm]{Dataplex.png}
-		\caption{Single pane of glass - Dataplex}
-		\label{Dataplex}
-	\end{framed}
-\end{figure}
+Dataplex enhances this process by automatically registering metadata as tables and filesets as metastores and Data Catalog. Additionally, it tightly integrates with our Cloud Data Loss Prevention API (DLP) and includes built-in data quality checks, making it easier to tag sensitive data. With Dataplex, implementing a Data Mesh with simplified security controls becomes possible with single pane of glass \cite{gcloud}. It provides consistent security policies and enforcement for Cloud Storage and BigQuery, enabling central governance teams to audit the environment. Moreover, it offers managed Data Lake Storage with precise access control, ACID transactions on files, and a unified interface for managing BigQuery.
 
 Dataplex provides a data management and governance layer for organizing data across BigQuery and Cloud Storage. It enables centralized governance, empowering data administrators to establish workspaces, manage access, and control costs.
 
@@ -1017,9 +1022,9 @@ Google Cloud offers an integrated experience across its data analytics services,
 
 \section{Case study and Demo}
 \subsection{Data contracts in PayPal Inc.}
-As we can see in the figure \ref{datacontract}, data contract includes six main components. In PayPal Holdings Inc., they have built their own data contract that have published the example and template based on YAML data contract. There are eight main sections in the contract, including a catch-all section. The pricing part is a surprising addition.
+As we can see in the figure \ref{datacontract}, data contract includes six main components. In PayPal Holdings Inc., they have built their own data contract that have published the example and template based on YAML data contract. There are eight main sections in the contract, including a catch-all section. The pricing part is a still experimental.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10cm]{datacontractPayPal.png}
@@ -1028,16 +1033,14 @@ As we can see in the figure \ref{datacontract}, data contract includes six main 
 	\end{framed}
 \end{figure}
 
-This contract encompasses a dataset containing multiple tables, each with various details at the table and column levels. Data engineers can establish data quality (DQ) rules at different levels, which are not tied to any specific tool. They have the option to use either their own custom DQ tool or tools like Great Expectations. The pricing aspect of this version is still experimental.
-
-Stakeholders have an important role in building trust in a particular data product. The contract provides information about the stakeholders and their project history. While tribal knowledge may still exist, the contract helps track its evolution.
+This contract encompasses a dataset containing multiple tables, each with various details at the table and column levels. Data engineers can establish data quality (DQ) rules at different levels, which are not tied to any specific tool. Stakeholders have an important role in building trust in a particular data product. The contract provides information about the stakeholders and their project history. While tribal knowledge may still exist, the contract helps track its evolution.
 
 I have reconstructed PayPal's data contract and uploaded it in my Github repository \href{https://github.com/ngocminhta/DataMeshReport/tree/main/DataContractPayPal.md}{\underline{here}}.
 
 \subsection{Data mesh concept demo on Data Mesh Manager}
 This is \href{https://demo.datamesh-manager.com/}{\underline{a demo environment}} created on Data Mesh Manager with some data products, global policies, governance meetings, and teams. The data mesh is created for a stock company, with many domain team such as Marketing, Checkout, Product, Fulfillment, etc.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\vspace{-.2cm}
 	\begin{framed}
 		\centering
@@ -1048,11 +1051,28 @@ This is \href{https://demo.datamesh-manager.com/}{\underline{a demo environment}
 	\vspace{-.5cm}
 \end{figure}
 
+\subsection{Data mesh demo on Google Cloud Platform}
+While investigating about implementation of data mesh in Google Cloud Platform, I have find some guides from Google. For this project purpose, I have altered some little things for an easier approach and comprehension. You can find the code in my Github repository \href{https://github.com/ngocminhta/DataMeshDemoGCP}{\underline{here}}.
+
 \chapter{Conclusion}
-This paper investigates and introduces the notion of "data mesh", a cutting-edge and game-changing architecture for data management and processing. We've dug deep into discovering the origins of data mesh, the main principles of data mesh, and how to properly build the data product, the fundamental component that makes up the data mesh. Data Mesh is a distributed and flexible data management approach in which domains are responsible for creating and distributing data in the form of data products. In addition, the paper recommends a few technologies to aid in the deployment of a data mesh architecture in the company.
+This report has introduced the data mesh architecture and designs of data mesh and its core component - data product. We also have dug deep into discovering the origins of data mesh, the main principles of data mesh, and how to properly build the data product, the fundamental component that makes up the data mesh. I also recommend some tools and platform for you to clarify the concept of data mesh, and also to implement data mesh architecture in your organization.
 
-Because data mesh is a relatively new concept, additional study and testing are required before it can be properly implemented. To change the way the entire organization runs, its culture, and its architecture, a significant amount of effort is required. Furthermore, the provision of infrastructure and the development of supporting technologies are important factors in being able to use Data Mesh. However, once the data mesh is in place, the benefits significantly surpass the initial challenges. With dedication and concentration, Data Mesh can be a significant step forward in data mining and application in the present digital era.
+In conclusion, data mesh is a decentralized approach that treats data as a product, with each data product owned and managed by a domain team. This approach allows for greater agility and flexibility, as well as improved data quality and governance. Here are some of the key benefits of data mesh architecture:
+	\begin{itemize}[nosep]
+		\item Decentralized ownership and governance: Data mesh gives each domain team ownership and responsibility for their own data products. This allows teams to have more control over their data and how it is used.
+		\item Improved data quality: Data mesh promotes the use of standardized data schemas, which can help to improve data quality and interoperability.
+		\item Increased agility and flexibility: Data mesh is a more agile and flexible approach to data management than traditional data warehouses and lakes.
+		\item Improved data security: Data mesh can help to improve data security by giving each domain team control over their own data products. This can help to reduce the risk of data breaches and other security incidents.
+	\end{itemize}
+	
+If you are considering adopting data mesh architecture, there are a few key things to keep in mind:
+	\begin{itemize}[nosep]
+		\item Make sure you have the right team in place: Data mesh requires a team of skilled data engineers and data scientists who can build and manage data products.
+		\item Invest in the right tools: Data mesh requires a number of tools, such as data pipelines, data warehouses, and data catalogs.
+		\item Create a data governance plan: Data mesh requires a clear data governance plan that defines who owns and manages data products, as well as how data is shared and used.
+	\end{itemize}
 
+The appearance of data mesh has made a shift from traditional ways the entire organization runs, its culture, and its architecture of into a new one in many organization. To do that, a significant amount of effort is required. However, once the data mesh is in place, the benefits significantly surpass the initial challenges. With dedication and concentration, data mesh can be a significant step forward in data mining and application in the digital era.
 
 \begingroup
 \backmatter
