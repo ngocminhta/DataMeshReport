@@ -247,14 +247,23 @@ Data contracts vary depending on data and organization, there is no standardizat
 		\item Type and frequency of consumption.
 		\item Details of data ownership/ingestion.
 		\item Levels of data access necessary.
-		\item Information on security and governance (e.g., anonymization).
+		\item Information on security and governance (e.g., suppliers, users, starting \& expiry time).
 		\item How it affects any system(s) that intake may have an effect on.
 	\end{itemize}
 
-As organizations move towards a data mesh approach, and data is viewed as a product, organizations must create data contracts to keep data connected and running smoothly.
+Data Contract is a crucial Data Mesh idea for managing data products and their usage. Data contracts improve data quality and reliability, also, administrators' jobs get easier.
 
 \subsection{Principle of the Self-Serve Data Platform}
-The principle aims to empower domain teams by hiding low-level complexity behind simpler abstractions and minimizing friction from their journeys to exchanging data products as a unit of value, using decentralized, interoperable methods.
+A platform is required to link products with customers due to Data Mesh's decentralized nature. Furthermore, when each data management unit is independent of the others, there will be a lot of repetitive labor across units, which will impede the product's progress and efficiency. As a result, there is a need for a self-service infrastructure that provides the tools, interfaces, and resources necessary for domain units to interact with data on their own. This cuts development and operating costs dramatically.
+
+Some essential features of Data Platform:
+	\begin{itemize}
+		\item Self-service and self-management: The data platform allows entities to work with data and serve output to other units or external systems. This helps organizations stay organized flexibly, work with processes that fit their style and goals, and automate the sharing and use of data products.
+		\item Self-service and self-management: The data platform allows entities to work with data and serve output to other units or external systems. This helps organizations stay organized flexibly, work with processes that fit their style and goals, and automate the sharing and use of data products.
+		\item Security and access management: Every shared platform needs to provide security and access management, and the platform is no exception. Units can easily change the access to their products, add or remove permissions, and The data platform must also provide security tools to ensure that the organization's security policy is enforced.
+		\item Ensure integration between teams: Since each unit develops independently, the data platform must have a mechanism to integrate these products together. This mechanism can be in the form of regulations to be followed or adapters that the data platform provides.
+		\item Provide data discovery and discovery services: The Data Platform must provide a mechanism for users to find out which data products they need to use. Usually, this is done via a data registry or data catalog. In addition, the Data Platform must provide documentation, metadata, and metrics about the Data Product so that users have the information they need to use it effectively.
+	\end{itemize}
 
 
 \subsection{Principle of Federated Computational Governance}
@@ -280,49 +289,68 @@ To bring these three pillars together, Figure \ref{DataGov} shows an example of 
 
 Data mesh governance seeks to improve existing data governance by finding the dynamic equilibrium between localization and globalization of decisions. It requires trustworthiness and useful data across multiple domains to train ML-based solutions.
 
+\subsection{The correlations between the four principles}
+The correlations between the four principles are shown in figure \ref{CorPrinciples}.
+\begin{figure}[h]
+	\begin{framed}
+		\centering
+		\includegraphics[width=12cm]{CorPrinciples.png}
+		\caption{The correlations between the four principles}
+		\label{CorPrinciples}
+	\end{framed}
+\end{figure}
+
 \section{Why we need Data Mesh?}
 Data mesh is what comes after an inflection point, shifting our approach, attitude, and technology toward data. Data mesh assumes a new default starting state: proliferation of data origins within and beyond organizations’ boundaries, on one or across multiple cloud platforms.
 
 After the inflection point, data mesh make us reimagine data, specifically how to design solutions to manage it, how to govern it, and how to structure our teams: \cite{datamesh2022p2}
-	\begin{xltabular}{\textwidth}{||s|m|b|}
-		\caption{Summary of after the inflection point with data mesh} \label{tab:AfterInflection} \\
+	\begin{xltabular}{\textwidth}{||b|X|}
+		\caption{Summary of after the inflection point with data mesh by the goals} \label{tab:AfterInflection} \\
 		
-		\hline \multicolumn{1}{||s|}{\textbf{Goal}} & \multicolumn{1}{m|}{\textbf{What to do}} & \multicolumn{1}{b|}{\textbf{How to do it}} \\ \hline 
+		\hline \multicolumn{1}{||b|}{\textbf{What to do}} & \multicolumn{1}{X|}{\textbf{How to do it}} \\ \hline 
 		\endfirsthead
 		
-		\multicolumn{3}{c}%
+		\multicolumn{2}{c}%
 		{\tablename\ \thetable{} \textit{-- continued from previous page}} \\
-		\hline \multicolumn{1}{||s|}{\textbf{Goal}} & \multicolumn{1}{m|}{\textbf{What to do}} & \multicolumn{1}{b|}{\textbf{How to do it}} \\ \hline 
+		
+		\hline \multicolumn{1}{||b|}{\textbf{What to do}} & \multicolumn{1}{X|}{\textbf{How to do it}} \\ \hline 
 		\endhead
 		
-		\hline \multicolumn{3}{||r|}{{\textit{continued on next page --}}} \\ \hline
+		\hline \multicolumn{2}{||r|}{{\textit{continued on next page --}}} \\ \hline
 		\endfoot
 		
 		\hline
 		\endlastfoot
 		
-		\multirow{4}{*}{\parbox{.17\textwidth}{Manage changes to data gracefully in a complex, volatile, and uncertain business environment}} & Align business, tech, and data & Create cross-functional teams responsible for long-term data ownership.\\
-		\cline{2-3}
-		& Close the gap between the operational and analytical data planes  & Dumb pipes should be used to integrate applications and data products.\\ 
-		\cline{2-3}
-		& Localize data changes to business domains & Localize maintenance and ownership of data products in their specific domains \newline Create clear contracts between domain-oriented data products to reduce impact of change.\\
-		\cline{2-3}
-		& Reduce the accidental complexity of pipelines and copying of data & Break down pipelines, move transformation logic into data products.\\
-		\cline{1-3}
+		\multicolumn{2}{||X|}{\textbf{Manage changes to data gracefully in a complex, volatile, and uncertain business environment}} \\
+		\hline
+		Align business, tech, and data & Create cross-functional teams responsible for long-term data ownership.\\
+		\hline
+		Close the gap between the operational and analytical data planes  & Dumb pipes should be used to integrate applications and data products.\\ 
+		\hline
+		Localize data changes to business domains & Localize maintenance and ownership of data products in their specific domains \newline Create clear contracts between domain-oriented data products to reduce impact of change.\\
+		\hline
+		Reduce the accidental complexity of pipelines and copying of data & Break down pipelines, move transformation logic into data products.\\
+		\hline
 		
-		\multirow{4}{*}{\parbox{.17\textwidth}{Sustain agility in the face of growth}} & Remove centralized architectural bottlenecks & Remove centralized data warehouses and data lakes \newline Enable peer-to-peer data sharing of data products through their data interfaces.\\
-		\cline{2-3}
-		& Reduce the coordination of data pipelines & Decomposition of pipeline architecture from functional to domain-oriented. \newline Introduce explicit data contracts between domain-oriented data products.\\
-		\cline{2-3}
-		& Reduce coordination of data governance & Delegate governance responsibilities to autonomous domains and their data product owners \newline Automate governance policies as code embedded and verified by each data product quantum.\\
-		\cline{2-3}
-		& Enable team autonomy & Give domain teams autonomy in moving fast independently.\newline Balance team autonomy with computational standards to create global consistency.\newline Provide domain-agnostic infrastructure capabilities to empower domain teams.\\
-		\cline{1-3}
-		\multirow{3}{*}{\parbox{.17\textwidth}{Increase value from data over cost}} & Abstract complexity with a data platform & Create a data-developer-centric and a data-user-centric infrastructure to remove friction and hidden costs in data development and use journeys \newline Define open and standard interfaces for data products to reduce vendor integration complexity.\\
-		\cline{2-3}
-		& Embed product thinking everywhere & Focus and measure success based on data user and developer happiness \newline Treat both data and the data platform as a product. \\
-		\cline{2-3}
-		& Go beyond the boundaries of an organization & Share data across physical and logical boundaries of platforms and organizations with standard and internet-based data sharing contracts across data products.\\
+		\multicolumn{2}{||X|}{\textbf{Sustain agility in the face of growth}} \\
+		\hline
+		Remove centralized architectural bottlenecks & Remove centralized data warehouses and data lakes \newline Enable peer-to-peer data sharing of data products through their data interfaces.\\
+		\hline
+		Reduce the coordination of data pipelines & Decomposition of pipeline architecture from functional to domain-oriented. \newline Introduce explicit data contracts between domain-oriented data products.\\
+		\hline
+		Reduce coordination of data governance & Delegate governance responsibilities to autonomous domains and their data product owners \newline Automate governance policies as code embedded and verified by each data product quantum.\\
+		\hline
+		Enable team autonomy & Give domain teams autonomy in moving fast independently.\newline Balance team autonomy with computational standards to create global consistency.\newline Provide domain-agnostic infrastructure capabilities to empower domain teams.\\
+		\hline
+		
+		\multicolumn{2}{||X|}{\textbf{Increase value from data over cost}} \\
+		\hline
+		Abstract complexity with a data platform & Create a data-developer-centric and a data-user-centric infrastructure to remove friction and hidden costs in data development and use journeys \newline Define open and standard interfaces for data products to reduce vendor integration complexity.\\
+		\hline
+		Embed product thinking everywhere & Focus and measure success based on data user and developer happiness \newline Treat both data and the data platform as a product. \\
+		\hline
+		Go beyond the boundaries of an organization & Share data across physical and logical boundaries of platforms and organizations with standard and internet-based data sharing contracts across data products.\\
 	\end{xltabular}
 
 While the evolution of data architecture has been necessary and an improvement, all of the existing analytical data architectures share a common set of characteristics that inhibit them from scaling organizationally. They are all monolithic with centralized ownership and technically partitioned. It is no longer valid when data gets sources from hundreds of microservices and millions of devices from within and outside of enterprises.
@@ -338,53 +366,64 @@ While the evolution of data architecture has been necessary and an improvement, 
 	\end{framed}
 \end{figure}
 
-\begin{xltabular}{\textwidth}{||s|m|b|}
+\begin{xltabular}{\textwidth}{||m|X|}
 	\caption{Data mesh logical architectural components} \label{tab:LogicArch} \\
 	
-	\hline \multicolumn{1}{||s|}{\textbf{Aspect}} & \multicolumn{1}{m|}{\parbox{.17\textwidth}{\textbf{Architectural component}}} & \multicolumn{1}{b|}{\textbf{Description}} \\ \hline 
+	\hline \multicolumn{1}{||m|}{\parbox{.17\textwidth}{\textbf{Architectural component}}} & \multicolumn{1}{b|}{\textbf{Description}} \\ \hline 
 	\endfirsthead
 	
-	\multicolumn{3}{c}%
+	\multicolumn{2}{c}%
 	{\tablename\ \thetable{} \textit{-- continued from previous page}} \\
-	\hline \multicolumn{1}{||s|}{\textbf{Aspect}} & \multicolumn{1}{m|}{\parbox{.17\textwidth}{\textbf{Architectural component}}} & \multicolumn{1}{b|}{\textbf{Description}} \\ \hline 
+	\hline \multicolumn{1}{m|}{\parbox{.17\textwidth}{\textbf{Architectural component}}} & \multicolumn{1}{b|}{\textbf{Description}} \\ \hline 
 	\endhead
 	
-	\hline \multicolumn{3}{||r|}{{\textit{continued on next page --}}} \\ \hline
+	\hline \multicolumn{2}{||r|}{{\textit{continued on next page --}}} \\ \hline
 	\endfoot
 	
 	\hline
 	\endlastfoot
 	
-	\multirow{3}{*}{\parbox{.13\textwidth}{\vskip 5pt Domain- Oriented  Data Sharing Interfaces}} & Domain & Systems, data products, and a cross-functional team aligned to serve a business domain function and outcomes and share its analytical and operational capabilities with the wider business and customers. \\
-	\cline{2-3}
-	& Domain analytical data interfaces & Standardized interfaces that discover, access, and share domain-oriented data products.\newline
+	\multicolumn{2}{||X|}{\textbf{Domain- Oriented  Data Sharing Interfaces}} \\
+	\hline
+	Domain & Systems, data products, and a cross-functional team aligned to serve a business domain function and outcomes and share its analytical and operational capabilities with the wider business and customers. \\
+	\hline
+	Domain analytical data interfaces & Standardized interfaces that discover, access, and share domain-oriented data products.\newline
 	The proprietary platforms need to offer open interfaces to make data sharing more convenient and interoperable with other hosting platforms. \\
-	\cline{2-3}
-	& Domain operational interfaces & APIs and applications through which a business domain shares its transactional capabilities and state with the wider organization.\\
-	\cline{1-3}
-	\multirow{3}{*}{\parbox{.13\textwidth}{\vskip 5pt Data product quantum}} & Data product structural components & Data product implemented as an architecture quantum that encapsulates all the structural components it needs to do its job - code, data, infrastructure specifications, and policies. \newline It is referred to in architectural discussions. It is used interchangeably with data products. \\
-	\cline{2-3}
-	& Data Product Data Sharing Interactions & There are many technologies for implementing a data product’s input and output data port of data mesh, but it shares the common properties:
+	\hline
+	Domain operational interfaces & APIs and applications through which a business domain shares its transactional capabilities and state with the wider organization.\\
+	\hline
+	
+	\multicolumn{2}{||X|}{\textbf{Data product quantum}} \\
+	\hline
+	Data product structural components & Data product implemented as an architecture quantum that encapsulates all the structural components it needs to do its job - code, data, infrastructure specifications, and policies. \newline It is referred to in architectural discussions. It is used interchangeably with data products. \\
+	\hline
+	Data Product Data Sharing Interactions & There are many technologies for implementing a data product’s I/O data port of data mesh, but it shares the common properties:
 	\begin{itemize}[nosep]
 		\item \textbf{Input data port:} A data product’s mechanisms to continuously receive data from one or multiple upstream sources.
 		\item \textbf{Output data port:} A data product’s standardized APIs to continuously share data. \vspace{-.3cm}
 	\end{itemize} \\
-	\cline{2-3}
-	& Discovery and observability APIs & A data product’s standard APIs to provide discoverability information - to find, address, learn, and explore a data product - and observability information such as lineage, metrics, logs, etc.\\
-	\cline{1-3}
-	\multirow{4}{*}{\parbox{.13\textwidth}{The Multiplane Data Platform}} & Platform plane & A group of self-serve platform capabilities with high functional cohesion surfaced through APIs.\\
-	\cline{2-3}
-	& Data infrastructure (utility) plane & Platform plane providing low-level infrastructure resource management - compute, storage, identity, etc.\\
-	\cline{2-3}
-	& Data product experience plane & Platform plan providing operations on a data product.\\
-	\cline{2-3}
-	& Mesh experience & Platform plane providing operations on the mesh of connected data products.\\
-	\cline{1-3}
-	\multirow{4}{*}{\parbox{.13\textwidth}{Embedded Computational Policies}} & Data product container & A mechanism to bundle all the structural components of a data product, deployed and run as a single unit with its sidecar.\\
-	\cline{2-3}
-	& Data product sidecar & The accompanying process to the data product implements cross-functional and standardized behaviors.\\
-	\cline{2-3}
-	& Control port & A data product’s standard APIs to configure policies or perform highly privileged governance operations.\\
+	\hline
+	Discovery and observability APIs & A data product’s standard APIs to provide discoverability information - to find, address, learn, and explore a data product - and observability information such as lineage, metrics, logs, etc.\\
+	\hline
+	
+	\multicolumn{2}{||X|}{\textbf{The Multiplane Data Platform}} \\
+	\hline
+	Platform plane & A group of self-serve platform capabilities with high functional cohesion surfaced through APIs.\\
+	\hline
+	Data infrastructure (utility) plane & Platform plane providing low-level infrastructure resource management - compute, storage, identity, etc.\\
+	\hline
+	Data product experience plane & Platform plan providing operations on a data product.\\
+	\hline
+	Mesh experience & Platform plane providing operations on the mesh of connected data products.\\
+	\hline
+	
+	\multicolumn{2}{||X|}{\textbf{Embedded Computational Policies}} \\
+	\hline
+	Data product container & A mechanism to bundle all the structural components of a data product, deployed and run as a single unit with its sidecar.\\
+	\hline
+	Data product sidecar & The accompanying process to the data product implements cross-functional and standardized behaviors.\\
+	\hline
+	Control port & A data product’s standard APIs to configure policies or perform highly privileged governance operations.\\
 \end{xltabular}
 
 \begin{figure}[h]
@@ -412,7 +451,7 @@ As we have discussed previously, the multiplane data platform consists of three 
 	\vspace{-.5cm}
 \end{figure}
 
-The data product experience plane provides operations on a data product and manages the complexity of provisioning its underlying infrastructure, while the data infrastructure utility plane optimizes the resources' performance and utilization to get the best out of the underlying infrastructure providers. The most important idea is to understand the main journeys of the platform users and evaluate how to make it easy for them to complete their journeys.
+The data product experience plane provides operations on a data product and manages the complexity of provisioning its underlying infrastructure, while the infrastructure utility plane optimizes the resources' performance and utilization to get the best out of the underlying infrastructure providers. The most important idea is to understand the main journeys of platform users and evaluate how to make it easy for them to complete.
 \vspace{-.3cm}
 \subsubsection*{Data Product Developer Journey}
 \begin{figure}[h]
@@ -427,7 +466,7 @@ The data product experience plane provides operations on a data product and mana
 Creating and operating a data product is one of the most important journeys of a data product developer. This is a comprehensive and long-term obligation that adheres to the continuous delivery premise of "everyone is responsible." A data product development journey interacts with other journeys. Let’s look at the figure \ref{DataProductDevJourney} for an example of high-level stages of data product development and how the platform interfaces are designed to support them.
 
 We should go deeper to consider each stage of the platform planes and interfaces
-\begin{xltabular}{\textwidth}{||s|m|m|b|}
+\begin{xltabular}{\textwidth}{||s|m|m|X|}
 	\caption{Example interfaces provided by the platform planes} \label{tab:PlatformPlanes} \\
 	
 	\hline \multicolumn{1}{||s|}{\textbf{Phase}} & \textbf{Platform plane} & \textbf{Platform interface} &  \multicolumn{1}{b|}{\textbf{Platform interface description}}\\ \hline 
@@ -515,42 +554,42 @@ The data infrastructure plane is a key enabler in lowering the cost and effort r
 \end{figure}
 
 
-\begin{xltabular}{\textwidth}{||m|m|b|}
-	\caption{Data platform interfaces that support data product experience plane APIs} \label{tab:InfrasPlanes} \\
-	
-	\hline \textbf{Platform plane} & \textbf{Platform interface} &  \multicolumn{1}{b|}{\textbf{Platform interface description}}\\ \hline 
-	\endfirsthead
-	
-	\multicolumn{3}{c}%
-	{\tablename\ \thetable{} \textit{-- continued from previous page}} \\
-	
-	\hline \textbf{Platform plane} & \textbf{Platform interface} &  \multicolumn{1}{b|}{\textbf{Platform interface description}}\\ \hline  
-	\endhead
-	
-	\hline \multicolumn{3}{||r|}{{\textit{continued on next page --}}} \\ \hline
-	\endfoot
-	
-	\hline
-	\endlastfoot
-
-	\multirow{5}{*}{\parbox{.13\textwidth}{Data product experience}} & \verb*|/{dp}/logs| \verb*|/{dp}/traces| \verb*|/{dp}/metrics| & Data products emit runtime observability information such as logs, traces, and metrics to be used by mesh layer monitoring services. \\
-	\cline{2-3}
-	& \verb*|/{dp}/status| & Checking the status of a data product. \\
-	\cline{2-3}
-	& \verb*|/{dp}/accesses| & The logs of all accesses to the data product. \\
-	\cline{2-3}
-	& \verb*|/{dp}/cost| & Tracking the operational cost of a data product. This can be calculated based on the resource allocation and usage. \\
-	\cline{2-3}
-	& \verb*|/migrate| & Ability to migrate a data product to a new environment. Updating the data product revision is simply a function of build and deploy. \\
-	\cline{1-3}
-	\multirow{3}{*}{\parbox{.13\textwidth}{Mesh experience}}& \verb*|/monitor| & Multiple monitoring abilities at the mesh level, logs, status, compliance, etc. \\
-	\cline{2-3}
-	& \verb*|/notifications|& Notification and alerting in response to detected anomalies of the mesh. \\
-	\cline{2-3}
-	& \verb*|/global-| \verb*|controls| & Ability to invoke high-privileged administrative controls such as right to be forgotten on a collection of data products on the mesh. \\
-	\cline{1-3}
-	Data product experience plane & \verb*|/{dp}/controls| & Data products are registered with the mesh and given a unique global identifier and address, making them visible to the governance process. \\
-\end{xltabular}
+%\begin{xltabular}{\textwidth}{||m|m|X|}
+%	\caption{Data platform interfaces that support data product experience plane APIs} \label{tab:InfrasPlanes} \\
+%	
+%	\hline \textbf{Platform plane} & \textbf{Platform interface} &  \multicolumn{1}{b|}{\textbf{Platform interface description}}\\ \hline 
+%	\endfirsthead
+%	
+%	\multicolumn{3}{c}%
+%	{\tablename\ \thetable{} \textit{-- continued from previous page}} \\
+%	
+%	\hline \textbf{Platform plane} & \textbf{Platform interface} &  \multicolumn{1}{b|}{\textbf{Platform interface description}}\\ \hline  
+%	\endhead
+%	
+%	\hline \multicolumn{3}{||r|}{{\textit{continued on next page --}}} \\ \hline
+%	\endfoot
+%	
+%	\hline
+%	\endlastfoot
+%
+%	\multirow{5}{*}{\parbox{.13\textwidth}{Data product experience}} & \verb*|/{dp}/logs| \verb*|/{dp}/traces| \verb*|/{dp}/metrics| & Data products emit runtime observability information such as logs, traces, and metrics to be used by mesh layer monitoring services. \\
+%	\cline{2-3}
+%	& \verb*|/{dp}/status| & Checking the status of a data product. \\
+%	\cline{2-3}
+%	& \verb*|/{dp}/accesses| & The logs of all accesses to the data product. \\
+%	\cline{2-3}
+%	& \verb*|/{dp}/cost| & Tracking the operational cost of a data product. This can be calculated based on the resource allocation and usage. \\
+%	\cline{2-3}
+%	& \verb*|/migrate| & Ability to migrate a data product to a new environment. Updating the data product revision is simply a function of build and deploy. \\
+%	\cline{1-3}
+%	\multirow{3}{*}{\parbox{.13\textwidth}{Mesh experience}}& \verb*|/monitor| & Multiple monitoring abilities at the mesh level, logs, status, compliance, etc. \\
+%	\cline{2-3}
+%	& \verb*|/notifications|& Notification and alerting in response to detected anomalies of the mesh. \\
+%	\cline{2-3}
+%	& \verb*|/global-| \verb*|controls| & Ability to invoke high-privileged administrative controls such as right to be forgotten on a collection of data products on the mesh. \\
+%	\cline{1-3}
+%	Data product experience plane & \verb*|/{dp}/controls| & Data products are registered with the mesh and given a unique global identifier and address, making them visible to the governance process. \\
+%\end{xltabular}
 
 \subsubsection*{Data Product Consumer Journey}
 A data consumer is a user with various skills and responsibilities, such as consuming existing data products to train an ML model and then deploying it as a data product. ML models can be deployed as a microservice or as the transformation logic of a data product.
@@ -608,7 +647,7 @@ In addition to four common constituents of architecture\footnote{Structure, Char
 
 Table \ref{tab:affordances} lists affordances for a data product to autonomously transform and serve meaningful, understandable, trustworthy data that can be connected to other data in the ecosystem. It has all the structural components to do its job, and its dependencies to other data products or platform services are through APIs with explicit contracts, creating loose coupling.
 
-\begin{xltabular}{\textwidth}{||s|b|}
+\begin{xltabular}{\textwidth}{||s|X|}
 	\caption{Data product affordances} \label{tab:affordances} \\
 	
 	\hline \textbf{Affordances} & \multicolumn{1}{b|}{\textbf{Description}}\\ \hline 
@@ -664,16 +703,7 @@ Data products serve domain-oriented data to diverse consumers through output dat
 		\item Bitemporal data: Bitemporal data modeling records two timestamps: actual time and processing time, making it possible to serve data as immutable entities and perform temporal analysis and time travel.
 	\end{itemize}
 
-\begin{figure}
-	\begin{framed}
-		\centering
-		\includegraphics[width=10.5cm]{ServeData.png}
-		\caption{Data product’s high-level components to design serve data}
-		\label{ServeData}
-	\end{framed}
-\end{figure}
-
-\begin{xltabular}{\textwidth}{||s|b|}
+\begin{xltabular}{\textwidth}{||s|X|}
 	\caption{High-level data product components to serve data} \label{tab:servedata} \\
 	
 	\hline \textbf{Component} & \multicolumn{1}{b|}{\textbf{Description}}\\ \hline 
@@ -698,6 +728,15 @@ Data products serve domain-oriented data to diverse consumers through output dat
 	Core data semantic & Expression of the data semantic - agnostic to the modes of access or its spatial syntax. \\
 \end{xltabular}
 
+\begin{figure}[h]
+	\begin{framed}
+		\centering
+		\includegraphics[width=10.5cm]{ServeData.png}
+		\caption{Data product’s high-level components to design serve data}
+		\label{ServeData}
+	\end{framed}
+\end{figure}
+
 \subsection{Consume Data}
 In most of cases, data in organizations originates from internal or external systems, and data products consume it from one or multiple sources. Input data ports are a logical architectural construct that allow a data product to connect to a source, execute queries, and receive data as a continuous stream or one-off payload. Consume data design has some notable characteristics that impact the design of a data product’s input data:
 
@@ -706,7 +745,7 @@ In most of cases, data in organizations originates from internal or external sys
 	\item Locality of Data Consumption.
 \end{itemize}
 
-\begin{xltabular}{\textwidth}{||s|b|}
+\begin{xltabular}{\textwidth}{||s|X|}
 	\caption{High-level components to design consume data} \label{tab:consumedata} \\
 	
 	\hline \textbf{Component} & \multicolumn{1}{b|}{\textbf{Description}}\\ \hline 
@@ -737,11 +776,12 @@ In most of cases, data in organizations originates from internal or external sys
 
 \begin{figure}[h]
 	\begin{framed}
-			\centering
-			\includegraphics[width=10.5cm]{ConsumeData.png}
-			\caption{Data product’s design to consume data}
-			\label{ConsumeData}
-		\end{framed}
+		\centering
+		\includegraphics[width=10.5cm]{ConsumeData.png}
+		\caption{Data product’s design to consume data}
+		\label{ConsumeData}
+	\end{framed}
+	\vspace{-1cm}
 \end{figure}
 
 \subsection{Transform Data}
@@ -754,16 +794,7 @@ Data products are created to share a new analytical model of existing data. Tran
 		\item Time-Variant: Transformations respect the axes of time, processing and actual, by keeping track of processing time and generating output with actual time.
 	\end{itemize}
 
-\begin{figure}[h]
-	\begin{framed}
-		\centering
-		\includegraphics[width=10.5cm]{TransformData.png}
-		\caption{High-level components to design transformation for data products}
-		\label{TransformData}
-	\end{framed}
-\end{figure}
-
-\begin{xltabular}{\textwidth}{||s|b|}
+\begin{xltabular}{\textwidth}{||s|X|}
 	\caption{High-level components to transform data for a data product} \label{tab:transformdata} \\
 	
 	\hline \textbf{Component} & \multicolumn{1}{b|}{\textbf{Description}}\\ \hline 
@@ -817,29 +848,31 @@ The design considerations for a system of distributed data models that enables d
 
 The design prioritizes loose coupling between data products and minimizing centralized synchronization points. Data composability across the mesh is based on a distributed type system (schemas) where each data product owns and controls its own life cycle.
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{ComposeData.png}
 		\caption{Data product’s high-level components to design data composability}
 		\label{ComposeData}
 	\end{framed}
+	\vspace{-.5cm}
 \end{figure}
 
 \section{Managing, Governing \& Observing Data}
 \subsection{Manage the Life Cycle}
 A data product's manifest is the specification of its target state, which can change and evolve during its lifetime. Developers create two groups of artifacts: source artifacts and data quantum manifest, which are used to generate the build and runtime artifacts, provision necessary resources, and run the data product container. The declarative modeling of a data product hides complexity, allowing developers to communicate various facets and properties of a data product in a standard fashion.
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{ManageLifeCycle.png}
 		\caption{High-level interactions to manage the life cycle of a data product}
 		\label{ManageLifeCycle}
 	\end{framed}
+	\vspace{-.5cm}
 \end{figure}
 
-\begin{xltabular}{\textwidth}{||s|b|}
+\begin{xltabular}{\textwidth}{||s|X|}
 	\caption{High-level components to transform data for a data product} \label{tab:DataManifest} \\
 	
 	\hline \textbf{Component} & \multicolumn{1}{b|}{\textbf{Description}}\\ \hline 
@@ -873,13 +906,14 @@ A data product's manifest is the specification of its target state, which can ch
 \subsection{Govern Data}
 Data products are architectural components that enable configuration and execution of policies. These components include a control port, data product sidecar, and data product container. These components work in collaboration with the mesh experience plane, which provides capabilities for governance processes such as configuring policies and the right to be forgotten globally across the mesh. Governance of policies requires observability of their state of adoption, which can be domain-specific or agnostic. Successful implementation of data mesh governance requires design characteristics such as conformance to HIPAA and guaranteed data accuracy levels.
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{framed}
 		\centering
 		\includegraphics[width=10.5cm]{GovernData.png}
 		\caption{High-level design of embedded policies as code}
 		\label{GovernData}
 	\end{framed}
+	\vspace{-.8cm}
 \end{figure}
 
 \subsection{Observe, Debug, and Audit}
@@ -907,9 +941,9 @@ Data mesh observability begins with each data product sharing its external outpu
 %\section{Data Mesh in combination with Data Lakehouse}
 
 \section{Frameworks and technologies for Data Mesh}
-Data mesh is primarily an organizational approach, and that's why you can't buy a data mesh from a vendor. Technology, however, is important still as it acts as an enabler for data mesh, and only useful and easy to use solutions will lead to domain teams' acceptance. There are some tools for installing data mesh, such as Google Cloud Platform, AWS Platform and Data Build Tool (dbt) with Snowflake. \cite{datameshweb}
+Data mesh is primarily an organizational approach, and that's why you can't buy a data mesh from a vendor. Technology, however, is important still as it acts as an enabler for data mesh, and only useful and easy to use solutions will lead to domain teams' acceptance. There are some tools and platforms for installing data mesh, such as Google Cloud Platform, AWS Platform and Data Build Tool (dbt) with Snowflake. \cite{datameshweb} For an easy implementation and imagination, I suggest you to use \href{https://datamesh-manager.com/}{\underline{Data Mesh Manager}} to build the concept of data mesh.
 
-I have created a small comparison between these tools for an easy comprehension between them.
+I have created a small comparison between these tools for an easy comprehension between them. Note that, all of them can connect with some current project of domain teams and extensions such as Apache Kafka, Apache Airflow.
 
 \begin{xltabular}{\textwidth}{||m|m|m|}
 	\caption{Comparison between tools for data mesh} \label{tab:comparetools} \\
@@ -960,11 +994,11 @@ Google Cloud enables business users to create insights on the fly with self-serv
 	\end{framed}
 \end{figure}
 
-Google Cloud allows organizations to use different execution engines optimized for different workloads and personas to run on top of the same data tiers. This is possible because of the complete separation of compute and storage on Google Cloud. Users can access data at their level of data access including SQL, Python, or more GUI-based methods. Google Cloud’s Data Catalog, along with Dataproc Metastore and the BigQuery Metastore, allow for accessing data wherever it is located with any query engine. The process is simple: onboard the data asset in a Dataplex lake, which triggers discovery and publishes the data in BigQuery and \textbf{Dataproc} Metastore. Tools such as Vertex AI notebooks, Spark running on Dataproc, BigQuery, or Serverless Spark can then be easily integrated into the workflow. With BigQuery and Serverless Spark, data engineers can spend all their time on the code and logic. They do not need to manage clusters or tune infrastructure. They submit SQL or PySpark jobs from their interface of choice and processing is auto-scaled to match the needs of the job.
+Google Cloud allows using different execution engines for diverse workloads and user needs on shared data tiers. The separation of compute and storage enables this flexibility. Users can access data using SQL, Python, or GUI-based methods. Data Catalog, Dataproc Metastore, and BigQuery Metastore ensure data access from anywhere with any query engine. The process involves onboarding data to a Dataplex lake, triggering discovery and publishing in BigQuery and Dataproc Metastore. Tools like Vertex AI notebooks, Spark on Dataproc, BigQuery, or Serverless Spark integrate seamlessly. With BigQuery and Serverless Spark, data engineers focus on code and logic without managing clusters. They submit SQL or PySpark jobs, automatically scaled as needed.
 
-Dataplex is a managed service that enables enterprises to group data containers from across their Google Cloud deployment and organize them in a hierarchy. It provides a single pane of glass to organize, govern, and index data in the Data Mesh. With Dataplex, you can curate, catalog, secure, integrate, and explore any type of data at any scale with an integrated experience. Dataplex enables quickly built lakes without needing to acquire and worry about different resources. It expands automatic data discovery and schema inference across different systems so that once you add a resource to Dataplex, it can be represented in the Data Mesh .
+Dataplex is a managed service that groups data containers from Google Cloud, allowing hierarchical organization. It offers a unified platform to curate, catalog, secure, integrate, and explore data at any scale. With Dataplex, you can quickly build data lakes without resource concerns. It enhances automatic data discovery and schema inference across systems, seamlessly representing resources in the Data Mesh.
 
-Dataplex enhances this process by automatically registering metadata as tables and filesets as metastores and Data Catalog. Additionally, it tightly integrates with our Cloud Data Loss Prevention API (DLP) and includes built-in data quality checks, making it easier to tag sensitive data. With Dataplex, implementing a Data Mesh with simplified security controls becomes possible, as shown in Figure \ref{Dataplex}. It provides consistent security policies and enforcement for Cloud Storage and BigQuery, enabling central governance teams to audit the environment. Moreover, it offers managed Data Lake Storage with precise access control, ACID transactions on files, and a unified interface for managing BigQuery.
+Dataplex enhances this process by automatically registering metadata as tables and filesets as metastores and Data Catalog. Additionally, it tightly integrates with our Cloud Data Loss Prevention API (DLP) and includes built-in data quality checks, making it easier to tag sensitive data. With Dataplex, implementing a Data Mesh with simplified security controls becomes possible, as shown in figure \ref{Dataplex}. It provides consistent security policies and enforcement for Cloud Storage and BigQuery, enabling central governance teams to audit the environment. Moreover, it offers managed Data Lake Storage with precise access control, ACID transactions on files, and a unified interface for managing BigQuery.
 
 \begin{figure}[h]
 	\begin{framed}
@@ -975,15 +1009,24 @@ Dataplex enhances this process by automatically registering metadata as tables a
 	\end{framed}
 \end{figure}
 
-Data ownership and governance are crucial for the success of Data Mesh, and integrating governance with federated data sources is essential. Dataplex provides a data management and governance layer that allows you to efficiently organize your data across BigQuery and Cloud Storage while enforcing centralized governance rules. This empowers data administrators to establish and manage workspaces along with appropriate environment profiles, including compute parameters and libraries. They can also control user access and manage costs through a unified interface.
+Dataplex provides a data management and governance layer for organizing data across BigQuery and Cloud Storage. It enables centralized governance, empowering data administrators to establish workspaces, manage access, and control costs.
 
-Dataplex simplifies access to notebooks for data scientists, offering one-click access and enabling them to discover notebooks through a repository linked to associated data. They can easily save and share notebooks as if they were sharing any other asset within the organization. Data analysts can leverage SQL Workspace for ad hoc analysis, eliminating the need for reliance on specific data processing environments. They can seamlessly use Presto, Hive, or BigQuery through a single interface, without the need to access multiple environments.
+For data scientists, Dataplex simplifies notebook access and discovery, making it easy to save and share notebooks alongside associated data. Data analysts benefit from the SQL Workspace, eliminating the need for multiple data processing environments.
 
-In addition, data access is made easy and uncomplicated. Google Cloud offers an integrated experience across all its data analytics services, providing virtual Lakehouse experiences. This is enhanced by a serverless notebook experience with serverless Spark, specifically designed for data science. All data stored in Cloud Storage is automatically made accessible for querying through OSS tools and BigQuery. Additionally, Data Catalog enables search and discovery capabilities across the entire data landscape.
-% check in Zalo and refs folder.
+Google Cloud offers an integrated experience across its data analytics services, providing virtual Lakehouse capabilities. Serverless Spark and a serverless notebook experience are designed for data science. Data stored in Cloud Storage is accessible for querying through OSS tools and BigQuery. Data Catalog enables search and discovery across the data landscape.
+
 \section{Case study and Demo}
 \subsection{Data contracts in PayPal Inc.}
 As we can see in the figure \ref{datacontract}, data contract includes six main components. In PayPal Holdings Inc., they have built their own data contract that have published the example and template based on YAML data contract. There are eight main sections in the contract, including a catch-all section. The pricing part is a surprising addition.
+
+\begin{figure}[h]
+	\begin{framed}
+		\centering
+		\includegraphics[width=10cm]{datacontractPayPal.png}
+		\caption{Data Contract example in PayPal Holdings Inc.,}
+		\label{DataContractPayPal}
+	\end{framed}
+\end{figure}
 
 This contract encompasses a dataset containing multiple tables, each with various details at the table and column levels. Data engineers can establish data quality (DQ) rules at different levels, which are not tied to any specific tool. They have the option to use either their own custom DQ tool or tools like Great Expectations. The pricing aspect of this version is still experimental.
 
@@ -991,7 +1034,24 @@ Stakeholders have an important role in building trust in a particular data produ
 
 I have reconstructed PayPal's data contract and uploaded it in my Github repository \href{https://github.com/ngocminhta/DataMeshReport/tree/main/DataContractPayPal.md}{\underline{here}}.
 
-\subsection{Data mesh demo on Google Cloud Platform}
+\subsection{Data mesh demo on Data Mesh Manager}
+This is \href{https://demo.datamesh-manager.com/}{\underline{a demo environment}} created on Data Mesh Manager with some data products, global policies, governance meetings, and teams. The data mesh is created for a stock company, with many domain team such as Marketing, Checkout, Product, Fulfillment, etc.
+
+\begin{figure}[h]
+	\begin{framed}
+		\centering
+		\includegraphics[width=15cm]{DataMeshManagerDemo.png}
+		\caption{Data mesh demo in Data Mesh Manager}
+		\label{DataMeshManagerDemo}
+	\end{framed}
+\end{figure}
+
+\chapter{Conclusion}
+\section{Conclusion}
+This paper investigates and introduces the notion of "data mesh", a cutting-edge and game-changing architecture for data management and processing. We've dug deep into discovering the origins of data mesh, the main principles of data mesh, and how to properly build the data product, the fundamental component that makes up the data mesh. Data Mesh is a distributed and flexible data management approach in which domains are responsible for creating and distributing data in the form of data products. In addition, the paper recommends a few technologies to aid in the deployment of a data mesh architecture in the company.
+
+Because data mesh is a relatively new concept, additional study and testing are required before it can be properly implemented. To change the way the entire organization runs, its culture, and its architecture, a significant amount of effort is required. Furthermore, the provision of infrastructure and the development of supporting technologies are important factors in being able to use Data Mesh. However, once the data mesh is in place, the benefits significantly surpass the initial challenges. With dedication and concentration, Data Mesh can be a significant step forward in data mining and application in the present digital era.
+
 
 \begingroup
 \backmatter
