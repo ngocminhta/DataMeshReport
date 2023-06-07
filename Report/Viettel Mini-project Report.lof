@@ -24,7 +24,7 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Example of data infrastructure plane to support data product delivery\relax }}{15}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Example of ML model development journey\relax }}{16}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Data Product Simple Canvas\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Data Product Simple Canvas\relax }}{18}{figure.caption.15}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Data product’s high-level components to design serve data\relax }}{20}{figure.caption.16}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Data product’s design to consume data\relax }}{21}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces A data product sidecar provides a unified model of discoverability for all data products\relax }}{23}{figure.caption.18}%
@@ -36,5 +36,5 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Google Cloud Platform supports for data mesh\relax }}{27}{figure.caption.23}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Single pane of glass - Dataplex\relax }}{28}{figure.caption.24}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Data Contract example in PayPal Holdings Inc.,\relax }}{29}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Data mesh demo in Data Mesh Manager\relax }}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A part of data mesh demo in Data Mesh Manager\relax }}{29}{figure.caption.26}%
 \addvspace {10\p@ }
