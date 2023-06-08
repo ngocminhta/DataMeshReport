@@ -72,7 +72,7 @@ Z.~Dehghani, ``Principle of data as a product,'' in \emph{Data Mesh: Delivering
 
 \bibitem{contract}
 \BIBentryALTinterwordspacing
-S.~Michael. (2023) Data contracts – everything you need to know. [Online].
+S.~Michael. (2023) Data contracts -- everything you need to know. [Online].
   Available:
   \url{https://www.montecarlodata.com/blog-data-contracts-explained/}
 \BIBentrySTDinterwordspacing
@@ -91,9 +91,21 @@ Z.~Dehghani, ``Why data mesh?'' in \emph{Data Mesh: Delivering Data-Driven
 D.~A. Norman, \emph{The Design of Everyday Things}.\hskip 1em plus 0.5em minus
   0.4em\relax Basic Books, 2002.
 
+\bibitem{datameshtechstack}
+\BIBentryALTinterwordspacing
+C.~Jochen, V.~Larysa, and S.~Harrer. (2023) Data mesh tech stacks. [Online].
+  Available: \url{https://www.datamesh-architecture.com/#tech-stacks}
+\BIBentrySTDinterwordspacing
+
 \bibitem{gcloud}
 T.~Firat, H.~Thinh, P.~Johan, C.~Victor, and P.~Susan, \emph{Build a modern,
   distributed Data Mesh with Google Cloud}.\hskip 1em plus 0.5em minus
   0.4em\relax Google Cloud, 2022.
+
+\bibitem{DataMeshGcloud}
+\BIBentryALTinterwordspacing
+L.~Sergei and B.~Ravi. (2022) Architecture and functions in a data mesh.
+  [Online]. Available: \url{https://cloud.google.com/architecture/data-mesh}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

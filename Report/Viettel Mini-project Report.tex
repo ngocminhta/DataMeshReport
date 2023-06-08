@@ -69,9 +69,9 @@ This document is a part of my research mini-project as a data engineer intern fo
 
 Data has grown up so quickly recently. The term 'big data' has become familiar with every tech-lovers is the clearest evidence of the explosion of data. This leads to many requirements of upgrading the current system and management, along with finding new architecture to store, process and analyze data. Once the central data lake has been overloaded, we need to design a decentralized architecture. This report is written under the research about the Data Mesh architecture, a new design that was first defined by Zhamak Dehghani in 2019. In this report, I will show you the outstanding points of data mesh, along with the shifts that it may cause. Also, I will introduce about the designs of data mesh, and its main components - data product. Some tools and platforms are also introduced along with some demos, which may help you have a clearer insight of data mesh architecture.
 
-To write this document, I would like to give many thanks to Viettel Group, and Viettel Digital Talent program for giving me chance to do my research. I want to send a big thanks to Mr. Nguyễn Chí Thanh, and all the mentors of the first period of the program, who gave me many useful lectures and guidance. Also, I want to say thanks to professor Huỳnh Thị Thanh Bình, professor Đỗ Tuấn Anh for their initial supports, and many other professors at the International Research Center for AI and the School of Information and Communication Technology, Hanoi University of Science and Technology about their public documents about data engineering. Last, I would like to say thanks to all of my friends, who always read my documents, comment about them and support me whenever I need.
+To write this document, I would like to give many thanks to Viettel Group, and Viettel Digital Talent program for giving me chance to do my research. I want to send a big thanks to Mr. Nguyễn Chí Thanh, my project mentor, and also all the mentors of the first period of the program, who gave me many useful lectures and guidance. Also, I want to say thanks to professor Huỳnh Thị Thanh Bình, professor Đỗ Tuấn Anh for their initial supports, and many other professors at the International Research Center for AI and the School of Information and Communication Technology, Hanoi University of Science and Technology about their public research and documents. Last, I would like to say thanks to all of my friends, who always read my documents, comment about them and support me whenever I need.
 
-Because this document is written in such a short time and some of the concepts are so new and hard to understand for a fresher like me, it is so hard to make sure it is completely correct, including the grammar errors and formatting errors in \LaTeX. I would love to receive your contributions via \underline{\textbf{\href{mailto:ngocminhta.nmt@gmail.com}{ngocminhta.nmt@gmail.com}}}.
+Because this document is written in such a short time and some of the concepts are so new and hard to understand for a fresher like me, it is not easy to make sure it is completely correct, including the grammatical and lexicographic errors. I would love to receive your contributions via \underline{\href{mailto:ngocminhta.nmt@gmail.com}{ngocminhta.nmt@gmail.com}}.
 
 Thank you for reading this report and looking forward to getting many comments from you.\\
 \vspace{0.5cm}
@@ -140,7 +140,7 @@ Let's consider the scale-up of the software development over time. When one task
 		\item Decentralize operations into DevOps teams.
 	\end{itemize}
 
-Hence, the next thing we need to do is scaling up data analytics by decentralizing data lake into data mesh.\cite{datameshweb}
+Hence, the next thing we need to do is scaling up data analysis by decentralizing data lake into data mesh.\cite{datameshweb}
 
 \section{Initial approach}
 \subsection{What is Data Mesh?}
@@ -170,7 +170,6 @@ Data mesh ensures organizations to continue to apply some data lake principles, 
 It is an implementation detail sub-serving the idea of domain data product as the first-class concern. The same applies to data warehouse in terms of business reporting and visualization \cite{shiftkpmg}. It also cause a cultural shift in the organization, also, a fundamental shift in the assumptions, architecture, technical solutions, and social structure of our organizations. \cite{datamesh2022ch1}
 
 \begin{figure}[ht]
-	\vspace*{-.3cm}
 	\begin{framed}
 		\centering
 		\includegraphics[width=12cm]{OrgChanges.png}
@@ -308,7 +307,7 @@ The correlations between the four principles are shown in figure \ref{CorPrincip
 \begin{figure}[ht]
 	\begin{framed}
 		\centering
-		\includegraphics[width=12cm]{CorPrinciples.png}
+		\includegraphics[width=16cm]{CorPrinciples.png}
 		\caption{The correlations between the four principles}
 		\label{CorPrinciples}
 	\end{framed}
@@ -801,9 +800,9 @@ In most of cases, data in organizations originates from internal or external sys
 \subsection{Transform Data}
 Data products are created to share a new analytical model of existing data. Transformation is an internal implementation of a data product and is controlled by it. It is up to the data product developer to choose how to implement the transformation, and it is helpful to look at a few different ways of implementation:
 	\begin{itemize}[nosep]
-		\item Nonprogrammatic: Nonprogrammatic transformations use relational algebra or flow-based functions to capture the intent of how data is transformed, but are limited to the features of the statement.
+		\item Non-programmatic: Non-programmatic transformations use relational algebra or flow-based functions to capture the intent of how data is transformed, but are limited to the features of the statement.
 		\item Programmatic: Programmatic data processing uses code logic, conditions, and statements to transform data, allowing it to be modularized and tested, making it more extensible.
-		\item Dataflow-Based: Dataflow programming is a natural paradigm for implementing transformation code, as long as the pipeline stages don't extend beyond the boundary of a data product.
+		\item Dataflow-based: Dataflow programming is a natural paradigm for implementing transformation code, as long as the pipeline stages don't extend beyond the boundary of a data product.
 		\item ML Model: ML models can be deployed in many contexts to make predictions and store recommendations for playlist extension.
 		\item Time-Variant: Transformations respect the axes of time, processing and actual, by keeping track of processing time and generating output with actual time.
 	\end{itemize}
@@ -858,7 +857,7 @@ The data product sidecar is a platform-provided agent that runs within the compu
 \end{figure}
 \vspace{-.3cm}
 \subsection{Compose Data}
-The design considerations for a system of distributed data models that enables data composability and quick evolution without building tightly connected or centralized models are the most essential details in this article. Ownership of a time-variant, sharable, and referenceable semantic data model, semantic model linking, a global identification system to map data across data products, and the responsibility of data product owners to continuously look for opportunities to discover and create meaningful relationships with other data products are among the design considerations. These design principles are required for individual data products to generate higher-order intelligence and understanding.
+The design considerations for a system of distributed data models that enables data composability and quick evolution without building tightly connected or centralized models are the most essential details in this article. Ownership of a time-variant, shareable, and referenceable semantic data model, semantic model linking, a global identification system to map data across data products, and the responsibility of data product owners to continuously look for opportunities to discover and create meaningful relationships with other data products are among the design considerations. These design principles are required for individual data products to generate higher-order intelligence and understanding.
 
 The design prioritizes loose coupling between data products and minimizing centralized synchronization points. Data composability across the mesh is based on a distributed type system (schemas) where each data product owns and controls its own life cycle.
 
@@ -918,7 +917,7 @@ A data product's manifest is the specification of its target state, which can ch
 \end{xltabular}
 
 \subsection{Govern Data}
-Data products are architectural components that enable configuration and execution of policies. These components include a control port, data product sidecar, and data product container. These components work in collaboration with the mesh experience plane, which provides capabilities for governance processes such as configuring policies and the right to be forgotten globally across the mesh. Governance of policies requires observability of their state of adoption, which can be domain-specific or agnostic. Successful implementation of data mesh governance requires design characteristics such as conformance to HIPAA and guaranteed data accuracy levels.
+Data products are architectural components that enable configuration and execution of policies. These components include a control port, data product sidecar, and data product container. These components work in collaboration with the mesh experience plane, which provides capabilities for governance processes such as configuring policies and the right to be forgotten globally across the mesh. Governance of policies requires observability of their state of adoption, which can be domain-specific or agnostic. Successful implementation of data mesh governance requires design characteristics such as conformance to HIPAA\footnote{Health Insurance Portability and Accountability Act} and guaranteed data accuracy levels.
 
 \begin{figure}[ht]
 	\begin{framed}
@@ -984,7 +983,7 @@ I have created a small comparison between these tools for an easy comprehension 
 	Every domain team typically gets their own GCP project under an organization resource. & Every domain team typically has their own AWS S3 buckets to store their own data products. & Every domain team manages their own dbt projects and CI pipelines to run the models. \\
 \end{xltabular}
 
-Here, for the purpose of an enterprise, I will focus on implementing data mesh using Google Cloud Platform with supports from Apache Kafka, PostgreSQL, and other extensions. Other tools can be find a simple description in \cite{datameshweb}
+Here, for the purpose of an enterprise, I will focus on implementing data mesh using Google Cloud Platform with supports from Apache Kafka, PostgreSQL, and other extensions. Other tools can be find a simple description in \cite{datameshtechstack}
 
 \begin{figure}[ht]
 	\begin{framed}
@@ -1052,7 +1051,7 @@ This is \href{https://demo.datamesh-manager.com/}{\underline{a demo environment}
 \end{figure}
 
 \subsection{Data mesh demo on Google Cloud Platform}
-While investigating about implementation of data mesh in Google Cloud Platform, I have find some guides from Google. For this project purpose, I have altered some little things for an easier approach and comprehension. You can find the code in my Github repository \href{https://github.com/ngocminhta/DataMeshDemoGCP}{\underline{here}}.
+While investigating about implementation of data mesh in Google Cloud Platform \cite{DataMeshGcloud}, I have find some guides from Google. For this project purpose, I have altered some little things for an easier approach and comprehension. You can find the code in my Github repository \href{https://github.com/ngocminhta/DataMeshDemoGCP}{\underline{here}}.
 
 \chapter{Conclusion}
 This report has introduced the data mesh architecture and designs of data mesh and its core component - data product. We also have dug deep into discovering the origins of data mesh, the main principles of data mesh, and how to properly build the data product, the fundamental component that makes up the data mesh. I also recommend some tools and platform for you to clarify the concept of data mesh, and also to implement data mesh architecture in your organization.
